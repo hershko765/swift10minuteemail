@@ -1,0 +1,29 @@
+// # Imports
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Sticky footer
+@import "footer";
+
+// Yeti Template
+@import "variables";
+@import "tmp";
+
+
+// Custom
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  font-size: 16px;
+}
+
+.table {
+  background: #fff;
+}
+
+.site-background {
+  background: url('../image/site-background.jpg');
+  background-repeat: no-repeat;  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.4;
+}

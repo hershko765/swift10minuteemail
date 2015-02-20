@@ -1,0 +1,9 @@
+{
+  "name": "Boa Forms",
+  "dependencies": {
+    "jquery": null,
+    "bootstrap-sass": null,
+    "underscore": null,
+    "jquery-validation": null
+  }
+}
