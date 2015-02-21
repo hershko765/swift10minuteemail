@@ -61,8 +61,21 @@ doctrine:
         #     path:     "%database_path%"
 
     orm:
+        default_entity_manager: default
         auto_generate_proxy_classes: "%kernel.debug%"
-        auto_mapping: true
+        entity_managers:
+            default:
+                dql:
+                    string_functions:
+                        GROUP_CONCAT: App\SourceBundle\Helpers\Doctrine\GroupConcat
+                connection: default
+                mappings:
+                    Manager:
+                        type:       annotation
+                        is_bundle:  false
+                        dir:        %kernel.root_dir%/../src/AppBundle/Entities
+                        prefix:     AppBundle\Entities
+                        alias:      AppBundle
 
 # Swiftmailer Configuration
 swiftmailer:
@@ -71,3 +84,17 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+# FOS Rest Bundle
+fos_rest:
+  format_listener:
+        rules:
+          -
+            path: '^/api'
+            priorities: ['json']
+            fallback_format: json
+            prefer_extension: false
+          -
+            priorities: ['html']
+  view:
+      view_response_listener: true

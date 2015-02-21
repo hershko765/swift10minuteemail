@@ -1,12 +1,13 @@
 // # Imports
 @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../vendor/font-awsome/scss/font-awesome";
 
 // Sticky footer
 @import "footer";
 
 // Yeti Template
 @import "variables";
-@import "tmp";
+@import "yeti";
 
 
 // Custom
@@ -19,11 +20,31 @@
 }
 
 .site-background {
-  background: url('../image/site-background.jpg');
-  background-repeat: no-repeat;  background-size: 100%;
+  background: url(../image/site-background.jpg) 0 0/100% no-repeat;
   width: 100%;
-  height: 100%;
+  height: 400px;
   position: absolute;
   z-index: -1;
-  opacity: 0.4;
+  opacity: .3 ;
+  border-bottom: 3px solid rgb(0, 63, 84);
+  box-shadow: 0 0 10px 2px;
+  outline: 2px solid #333;
+}
+
+.main-action-buttons {
+  text-align: right;
+  padding-top: 23px;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+  margin-top: 19px;
+}
+
+body>.container {
+  padding-top: 0;
+}
+
+.email-content {
+  word-wrap: break-word;
 }

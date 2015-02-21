@@ -4,6 +4,7 @@
     "jquery": null,
     "bootstrap-sass": null,
     "underscore": null,
-    "jquery-validation": null
+    "jquery-validation": null,
+    "moment": "~2.9.0"
   }
 }

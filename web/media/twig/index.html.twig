@@ -3,44 +3,121 @@
     <!-- Fixed navbar -->
     <!-- Begin page content -->
     <div class="container">
-        <div class="page-header">
-            <h1>Swift 10 Minute Email</h1>
+        <div class="jumbotron">
+            <div class="page-header">
+                <h1>Swift 10 Minute Email</h1>
+            </div>
+            <p class="lead">
+                This free service will provide you with free email address for short time, you are able to receive
+                email in your free 10 minute mailbox,
+                QA and debuggers can also view headers and assian spam score !
+            </p>
         </div>
-        <p class="lead">
-            This free service will provide you with free email address for short time, you are able to receive
-            email and see its content and more
-        </p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-header">
+                    <div class="row">
+                        <div class="col-md-7 col-sm-12">
+                            <h2>
+                                <strong>{{ visitor.getEmail() }}@swift10minuteemail.com</strong>
+                            </h2>
+                        </div>
+                        <div class="col-md-5 col-sm-12 pull-right main-action-buttons">
+                            <div class="btn-group">
+                                <a href="" class="btn btn-primary" id="add_time">
+                                    <span class="fa fa-clock-o"></span> &nbsp; &nbsp;
+                                    Give me more time</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-12">
+                <h3>Your Swift Mail will be deleted in <strong><span id="time-minutes"></span> Minutes</strong></h3>
 
-        <div class="page-header text-center">
-            <h2>
-                <strong>teG334g4@swift10minuteemail.com</strong>
-            </h2>
+                <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-success" id="visitor-time-progress"></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-12">
+                <div id="swift-table-region"></div>
+            </div>
         </div>
-        <div class="lead">
+    </div>
+{% endblock %}
+{% block templates %}
+    <script type="text/html" id="swift-row">
+        <td><%= id %></td>
+        <td><%= fromName %> <small>&lt;<%= fromAddress %>&gt;</small></td>
+        <td><%= subject %></td>
+        <td><a href="" class="read-email-btn" data-email="<%= id %>"><%= content_text.substring(0, 10) %>..</a></td>
+        <td><%= created_formatted %></td>
+        <td>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    More <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#" class="read-email-btn" data-email="<%= id %>">Content</a></li>
+                    <li><a href="#" class="headers-btn" data-email="<%= id %>">Headers</a></li>
+                </ul>
+            </div>
+        </td>
+    </script>
+    <script type="text/html" id="swift-table">
         <table class="table table-bordered table-hover ">
             <thead>
             <tr>
                 <th>#</th>
                 <th>From</th>
                 <th>Subject</th>
-                <th>Content</th>
+                <th>Preview</th>
+                <th>Date</th>
+                <th>...</th>
             </tr>
             </thead>
-            <tbody>
-            <tr>
-                <td>1</td>
-                <td>Column content</td>
-                <td>Column content</td>
-                <td>Column content</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Column content</td>
-                <td>Column content</td>
-                <td>Column content</td>
-            </tr>
-            </tbody>
+            <tbody></tbody>
         </table>
+    </script>
+    <script type="text/html" id="swift-table-empty">
+        <td colspan="6">
+            <h4 class="text-center">Your mail box is empty!</h4>
+        </td>
+    </script>
+    <script type="text/html" id="modal-view">
+        <!-- Modal -->
+        <div class="modal fade" id="modal-layout-view" tabindex="-1" role="dialog" data-backdrop="static">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Email Content</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div id="modal-content-region"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </script>
+    <script type="text/html" id="email-content">
+        <div class="email-content">
+            <%= content %>
+        </div>
+    </script>
+    <script type="text/html" id="email-headers">
+        <div class="email-headers">
+            <% _.each(headers, function(val, idx){ %>
+                <p> <strong><%= idx %></strong><pre><%= val %></pre></code> </p>
+            <% }); %>
+        </div>
+    </script>
 {% endblock %}

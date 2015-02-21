@@ -22,7 +22,13 @@ module.exports = function(grunt){
                 files: {
                     'js/build/main.min.js': [
                         'vendor/jquery/dist/jquery.js',
+                        'vendor/underscore/underscore.js',
+                        'vendor/backbone/backbone.js',
+                        'vendor/backbone.babysitter/libs/backbone.babysitter.js',
+                        'vendor/backbone.wreqr/libs/backbone.wreqr.js',
+                        'vendor/marionette/lib/backbone.marionette.js',
                         'vendor/bootstrap-sass/assets/javascripts/bootstrap.js',
+                        'vendor/moment/moment.js',
                         'js/**/*.js',
                         '!js/build/main.min.js'
                     ]

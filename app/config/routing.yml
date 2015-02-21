@@ -1,3 +1,13 @@
 app:
     resource: @AppBundle/Controller/
     type:     annotation
+
+app_api_email:
+    type: rest
+    prefix: api/v1
+    resource: "AppBundle\Controller\API\EmailController"
+
+app_api_visitor:
+    type: rest
+    prefix: api/v1
+    resource: "AppBundle\Controller\API\VisitorController"

@@ -10,6 +10,9 @@ services:
         tags:
             - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest }
 
+    handler_gateway:
+        class:        SourceBundle\Base\HandlerGateway
+        arguments: ['@service_container']
 #    service_name:
 #        class: AppBundle\Directory\ClassName
 #        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
