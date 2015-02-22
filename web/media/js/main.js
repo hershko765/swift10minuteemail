@@ -147,7 +147,7 @@
     App.modalRegion.show(modalView);
 
     $('body').on('click', '.read-email-btn', function(){
-        var emailModel = swiftEmailCollection.get(57);
+        var emailModel = swiftEmailCollection.get($(this).attr('data-email'));
 
         var emailContentView = new swiftApp.Views.EmailContentView({
             model: emailModel
