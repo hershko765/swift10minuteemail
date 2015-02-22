@@ -175,7 +175,7 @@
     }
 
     $('body').on('click', '.headers-btn', function(){
-        var emailModel = swiftEmailCollection.get(57);
+        var emailModel = swiftEmailCollection.get($(this).attr('data-email'));
 
         if ( ! emailModel.get('headers_changed')) {
             var headers = JSON.parse(emailModel.get('headers'));
