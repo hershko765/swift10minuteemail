@@ -12,3 +12,5 @@
 /bin/
 /composer.phar
 /web/media/node_modules
+/web/media/vendor
+.idea
