@@ -133,6 +133,10 @@
                 Server.Visitor.closeDate.timestamp = Server.Visitor.closeDate.timestamp + 600;
 
                 $(_this).attr('disabled', 'disabled');
+
+                setTimeout(function(){
+                    $(_this).attr('disabled', null);
+                }, 1000 * 60 * 8);
             }
         });
 

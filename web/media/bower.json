@@ -5,6 +5,7 @@
     "bootstrap-sass": null,
     "underscore": null,
     "jquery-validation": null,
-    "moment": "~2.9.0"
+    "moment": "~2.9.0",
+    "marionette": "~2.3.2"
   }
 }
