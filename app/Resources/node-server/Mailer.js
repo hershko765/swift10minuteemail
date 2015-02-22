@@ -15,8 +15,8 @@ var Mailer = function() {
     var _this = this;
     this._checking = false;
     this.options = {
-        mailPath: './dev_mail_path/',
-        apiURL: 'http://localhost:8000/api/v1/emails/log'
+        mailPath: '/home/swiftmail/mail/swift10minutemail.com/swiftmail/new/',
+        apiURL: 'http://swift10minutemail.com/api/v1/emails/log'
     };
 
     setInterval(function(){
@@ -31,7 +31,7 @@ Mailer.prototype.check = function() {
     this._checking = true;
     fs.readdir(this.options.mailPath, function(err, files){
         if (files.length == 0) {
-//            console.log('No files found, aborting');
+            console.log('No files found, aborting');
             _this._checking = false;
             return;
         }
@@ -41,7 +41,7 @@ Mailer.prototype.check = function() {
         if ( ! err) {
             files.forEach(function(val, key, arr){
                 fs.readFile(_this.options.mailPath + val, 'utf8', function(err, file){
-                    fs.unlink(_this.options.mailPath + val, function(){
+                    fs.unlink(_this.options.mailPath + val, function(err){
                         filesLeft -= 1;
                         _this.parse(file);
                         if (filesLeft == 0) _this._checking = false;
@@ -72,7 +72,7 @@ Mailer.prototype.parse = function(email) {
 };
 
 Mailer.prototype.onEmailReady = function(callback) {
-   this.callback = callback;
+    this.callback = callback;
 };
 
 exports.Mailer = Mailer;
