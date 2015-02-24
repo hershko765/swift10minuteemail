@@ -26,7 +26,7 @@
       <file leaf-file-name="layout.html.twig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/media/twig/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="13" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.5273973" vertical-offset="0" max-vertical-offset="1701">
+            <state line="53" column="47" selection-start="2848" selection-end="2848" vertical-scroll-proportion="0.47260273" vertical-offset="699" max-vertical-offset="1701">
               <folding />
             </state>
           </provider>
@@ -623,7 +623,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/media/twig/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="13" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.5273973" vertical-offset="0" max-vertical-offset="1701">
+        <state line="53" column="47" selection-start="2848" selection-end="2848" vertical-scroll-proportion="0.47260273" vertical-offset="699" max-vertical-offset="1701">
           <folding />
         </state>
       </provider>
