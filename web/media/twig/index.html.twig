@@ -56,9 +56,9 @@
         <td><%= id %></td>
         <td><%= fromName %> <small>&lt;<%= fromAddress %>&gt;</small></td>
         <td><%= subject %></td>
-        <td><a href="" class="read-email-btn" data-email="<%= id %>"><%= content_text.substring(0, 10) %>..</a></td>
+        <td class="hidden-sm hidden-xs"><a href="" class="read-email-btn" data-email="<%= id %>"><%= content_text.substring(0, 10) %>..</a></td>
         <td><%= created_formatted %></td>
-        <td>
+        <td class="hidden-sm hidden-xs">
             <div class="btn-group">
                 <button type="button" class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                     More <span class="caret"></span>
@@ -77,9 +77,9 @@
                 <th>#</th>
                 <th>From</th>
                 <th>Subject</th>
-                <th>Preview</th>
+                <th class="hidden-sm hidden-xs">Preview</th>
                 <th>Date</th>
-                <th>...</th>
+                <th class="hidden-sm hidden-xs">...</th>
             </tr>
             </thead>
             <tbody></tbody>

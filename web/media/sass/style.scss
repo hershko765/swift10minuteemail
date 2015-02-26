@@ -65,6 +65,14 @@ body>.container {
       width: 100%;
     }
   }
+
+  .container {
+    width: 100%;
+  }
+
+  .read-email-btn {
+    cursor: pointer;
+  }
 }
 
 @media (max-width: $screen-sm) {

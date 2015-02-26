@@ -23,11 +23,6 @@
         url: '/api/v1/emails'
     });
 
-    swiftApp.Views.EmailEmpty = Backbone.Marionette.ItemView.extend({
-        tagName: "tr",
-        template: "#swift-table-empty"
-    });
-
     swiftApp.Views.EmailContentView = Backbone.Marionette.ItemView.extend({
         template: "#email-content"
     });
@@ -65,6 +60,35 @@
                 created_formatted: moment(this.model.get('created')).format('MMMM Do YYYY, h:mm:ss a'),
                 content_text: tmp.textContent || tmp.innerText || ""
             }
+        },
+        onRender: function() {
+            if (window.innerWidth <= 991) {
+                this.$el
+                    .attr('class', 'read-email-btn')
+                    .attr('data-email', this.model.get('id'));
+            }
+            else {
+                this.$el
+                    .attr('class', null)
+                    .attr('data-email', null);
+            }
+        },
+        onShow: function() {
+            var _this = this;
+            $(window).on('resize.table-resize', function(){
+                if (_this.isSmall) {
+                    if (window.innerWidth > 991) {
+                        _this.isSmall = false;
+                        _this.render();
+                    };
+                }
+                else {
+                    if (window.innerWidth <= 991) {
+                        _this.isSmall = true;
+                        _this.render();
+                    };
+                }
+            });
         }
     });
 
