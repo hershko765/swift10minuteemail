@@ -42,6 +42,13 @@ class Visitor extends Model
     /**
      * @var string
      *
+     * @ORM\Column(type="string", length=15)
+     */
+    protected $ip;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(type="datetime")
      */
     protected $created;
@@ -96,11 +103,34 @@ class Visitor extends Model
     /**
      * Get email
      *
-     * @return string 
+     * @return string
      */
     public function getEmail()
     {
         return $this->email;
+    }
+
+    /**
+     * Set ip
+     *
+     * @param string $ip
+     * @return Visitor
+     */
+    public function setIp($ip)
+    {
+        $this->ip = $ip;
+
+        return $this;
+    }
+
+    /**
+     * Get ip
+     *
+     * @return string
+     */
+    public function getIp()
+    {
+        return $this->ip;
     }
 
     /**
