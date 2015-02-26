@@ -1,4 +1,7 @@
 // # Imports
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "variables";
+
 @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "../vendor/font-awsome/scss/font-awesome";
 
@@ -6,9 +9,7 @@
 @import "footer";
 
 // Yeti Template
-@import "variables";
 @import "yeti";
-
 
 // Custom
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
@@ -48,3 +49,49 @@ body>.container {
 .email-content {
   word-wrap: break-word;
 }
+
+@media (max-width: $screen-md) {
+  .page-header h2 {
+    text-align: center;
+  }
+
+  .btn-group {
+    display: block;
+    margin: auto;
+    overflow: auto;
+    width: 268px;
+
+    a {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .page-header h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 512px) {
+  .page-header h2 {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .jumbotron p {
+    font-size: 19px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    font-size: 12px;
+  }
+}
+
