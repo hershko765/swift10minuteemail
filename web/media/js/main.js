@@ -23,6 +23,11 @@
         url: '/api/v1/emails'
     });
 
+    swiftApp.Views.EmailEmpty = Backbone.Marionette.ItemView.extend({
+        tagName: "tr",
+        template: "#swift-table-empty"
+    });
+
     swiftApp.Views.EmailContentView = Backbone.Marionette.ItemView.extend({
         template: "#email-content"
     });
