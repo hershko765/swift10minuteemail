@@ -42,6 +42,10 @@ body {
   padding-top: 23px;
 }
 
+.jumbotron h1{
+  font-size: 43.5px;
+}
+
 .jumbotron {
   margin-bottom: 0;
   margin-top: 19px;
@@ -56,6 +60,13 @@ body>.container {
 }
 
 @media (max-width: $screen-md) {
+
+  .jumbotron h1{
+    text-align: center;
+
+    small { display: block }
+  }
+
   .page-header h2 {
     text-align: center;
   }
@@ -87,6 +98,12 @@ body>.container {
 }
 
 @media (max-width: 512px) {
+
+  .jumbotron h1{
+    font-size: 31px;
+  }
+
+
   .page-header h2 {
     font-size: 18px;
   }
