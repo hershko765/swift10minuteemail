@@ -28,6 +28,7 @@ module.exports = function(grunt){
                         'vendor/backbone.wreqr/libs/backbone.wreqr.js',
                         'vendor/marionette/lib/backbone.marionette.js',
                         'vendor/bootstrap-sass/assets/javascripts/bootstrap.js',
+                        'vendor/vex/js/vex.combined.min.js',
                         'vendor/moment/moment.js',
                         'js/**/*.js',
                         '!js/build/main.min.js'

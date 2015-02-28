@@ -18,7 +18,8 @@ class Visitor extends Repository {
 	 */
 	protected $filterMap = [
         [ 'email', 'email', '=' ],
-        [ 'ip', 'ip', '=' ],
+        [ 'is_closed', 'close_date', '<' ],
+        [ 'is_open', 'close_date', '>' ],
     ];
 
 	/**
@@ -26,9 +27,11 @@ class Visitor extends Repository {
 	 * @var array
 	 */
 	protected $tableMap = [
-		'id'    => self::PERM_NONE,
-		'email' => self::PERM_ALL,
-		'ip'    => self::PERM_ALL
+		'id'         => self::PERM_NONE,
+		'email'      => self::PERM_ALL,
+		'ip'         => self::PERM_ALL,
+		'created'    => self::PERM_ALL,
+		'close_date' => self::PERM_ALL,
 	];
 
 	/**

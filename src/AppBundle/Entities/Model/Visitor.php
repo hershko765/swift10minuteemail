@@ -30,12 +30,12 @@ class Visitor extends Model
     /**
      * @var string
      *
-     * @ORM\Column(type="string", length=80)
+     * @ORM\Column(type="string", length=80, unique=true)
      */
     protected $email;
 
     /**
-     * @ORM\OneToMany(targetEntity="Email", mappedBy="visitors")
+     * @ORM\OneToMany(targetEntity="Email", mappedBy="visitor")
      */
     protected $emails;
 

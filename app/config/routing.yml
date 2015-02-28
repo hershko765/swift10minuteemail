@@ -7,6 +7,11 @@ app_api_email:
     prefix: api/v1
     resource: "AppBundle\Controller\API\EmailController"
 
+app_api_email_history:
+    type: rest
+    prefix: api/v1/email
+    resource: "AppBundle\Controller\API\Email\HistoryController"
+
 app_api_visitor:
     type: rest
     prefix: api/v1

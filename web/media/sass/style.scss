@@ -5,6 +5,8 @@
 @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "../vendor/font-awsome/scss/font-awesome";
 
+@import "vex/vex";
+@import "vex/vex-theme-os";
 // Sticky footer
 @import "footer";
 
@@ -38,8 +40,6 @@ body {
 }
 
 .main-action-buttons {
-  text-align: right;
-  padding-top: 23px;
 }
 
 .jumbotron h1{

@@ -1,7 +1,7 @@
 <?php
-namespace AppBundle\Controller\API;
+namespace AppBundle\Controller\API\Email;
 
-use AppBundle\Entities\Handler\Email;
+use AppBundle\Entities\Handler\Email\History;
 use SourceBundle\Base;
 
 
@@ -23,23 +23,23 @@ use FOS\RestBundle\Controller\Annotations\Get;
 use Symfony\Component\HttpKernel\Exception\PreconditionFailedHttpException;
 
 
-class EmailController extends Base\Controller {
+class HistoryController extends Base\Controller {
 
 	/**
 	 * Get single Email,
 	 *
-	 * @Annotations\View(templateVar="Email")
+	 * @Annotations\View(templateVar="History")
 	 * @param int     $id      the page id
 	 * @return array
 	 *
 	 * @throws NotFoundHttpException when page not exist
 	 */
-	public function getEmailAction($id)
+	public function getHistoryAction($id)
 	{
         /**
-         * @var $handler Email\Get
+         * @var $handler History\Get
          */
-        $handler = $this->getHandler('Email', 'get');
+        $handler = $this->getHandler('Email:History', 'get');
 
 		return $handler->setID($id)->execute();
 	}
@@ -47,7 +47,7 @@ class EmailController extends Base\Controller {
 	/**
 	 * Get single Email,
 	 *
-	 * @Annotations\View(templateVar="Email")
+	 * @Annotations\View(templateVar="History")
      * @param Request $request the request object
 	 * @param int     $id      the page id
 	 *
@@ -55,22 +55,21 @@ class EmailController extends Base\Controller {
 	 *
 	 * @throws NotFoundHttpException when page not exist
 	 */
-	public function getEmailsAction(Request $request)
+	public function getHistoriesAction(Request $request)
 	{
 		$query    = $request->query->all();
 		$paging   = Arr::extract($query, [ 'limit', 'offset',  'order', 'page', 'sort' ]);
 		$filters  = Arr::extract($query, [  ]);
 		$settings = Arr::extract($query, [ 'select', 'index', 'selectBox', 'group' ]);
-		
+
         $filters = array_filter($filters);
 
         if ( ! $request->cookies->get('vid') ) throw new PreconditionFailedHttpException('No Permissions');
-        $filters['visitor'] = $request->cookies->get('vid');
 
         /**
-         * @var $handler Email\Collect
+         * @var $handler History\Collect
          */
-		$emails = $this->getHandler('Email', 'Collect')
+		$emails = $this->getHandler('Email:History', 'Collect')
             ->setFilters($filters)
             ->setPaging($paging)
             ->setSettings($settings)
@@ -88,19 +87,19 @@ class EmailController extends Base\Controller {
     /**
      * Create a Email from the submitted data
      *
-     * @Annotations\View(templateVar="Email")
+     * @Annotations\View(templateVar="History")
      *
      * @param Request $request the request object
      * @return array
      */
-    public function postEmailAction(Request $request)
+    public function postHistoryAction(Request $request)
     {
         $post = $request->request->all();
 
         /**
-         * @var $handler Email\Create
+         * @var $handler History\Create
          */
-        $handler = $this->getHandler('Email', 'Create');
+        $handler = $this->getHandler('Email:History', 'Create');
 
         return $handler->setData($post)->execute();
     }
@@ -109,20 +108,20 @@ class EmailController extends Base\Controller {
     /**
      * Create a Email from the submitted data
      *
-     * @Annotations\View(templateVar="Email")
+     * @Annotations\View(templateVar="History")
      *
      * @param Request $request the request object
      *
      * @return array
      */
-    public function putEmailAction(Request $request, $id)
+    public function putHistoryAction(Request $request, $id)
     {
         $post = $request->request->all();
 
         /**
-         * @var $handler Email\Update
+         * @var $handler History\Update
          */
-        $handler = $this->getHandler('Email', 'Update');
+        $handler = $this->getHandler('Email:History', 'Update');
 
         return $handler->setData($post, $id)->execute();
     }
@@ -130,7 +129,7 @@ class EmailController extends Base\Controller {
     /**
      * Delete Email,
      *
-     * @Annotations\View(templateVar="Email")
+     * @Annotations\View(templateVar="History")
      *
      * @param Request $request the request object
      * @param int     $id      the page id
@@ -138,38 +137,13 @@ class EmailController extends Base\Controller {
      *
      * @throws NotFoundHttpException when page not exist
      */
-    public function deleteEmailAction(Request $request, $id)
+    public function deleteHistoryAction(Request $request, $id)
     {
         /**
-         * @var $handler Email\Delete
+         * @var $handler History\Delete
          */
-        $handler  = $this->getHandler('Email', 'Delete');
+        $handler  = $this->getHandler('Email:History', 'Delete');
 
         return $handler->setID($id)->execute();
-    }
-
-    /**
-     * Email Log API,
-     *
-     * @Annotations\View(templateVar="Email")
-     * @post("/api/v1/emails/log")
-     * @param Request $request the request object
-     * @param int     $id      the page id
-     * @return array
-     *
-     * @throws NotFoundHttpException when page not exist
-     */
-    public function logEmailAction(Request $request)
-    {
-        $post = $request->request->all();
-
-        /**
-         * @var $handler Email\Log
-         */
-        $handler  = $this->getHandler('Email', 'Log');
-
-        $email = $handler->setData($post)->execute();
-
-        return $email->asArray();
     }
 }

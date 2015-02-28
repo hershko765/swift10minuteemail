@@ -226,4 +226,55 @@
 
         return false;
     });
+
+    $('#change-address').on('click', function(){
+        var _this = this;
+        $(this).attr('disabled', 'disabled');
+        $('.active-email').animate({ opacity: 0.2 });
+
+        $.ajax({
+            url: '/api/v1/visitors/change_address',
+            success: function(res) {
+                setTimeout(function(){
+                    $(_this).attr('disabled', null);
+                }, 3000);
+
+                $('.active-email').animate({ opacity: 1 }).html(res.email + '@swift10minutemail.com', { queue: true });
+            }
+        });
+
+        return false;
+    });
+
+    $('#custom-address').on('click', function(){
+        var _this = this;
+        vex.defaultOptions.className = 'vex-theme-os';
+
+        vex.dialog.prompt({
+            message: 'What email address you wish?',
+            placeholder: 'Email prefix Only, no @swift10minutemail required !',
+            callback: function(result) {
+                if (result) {
+                    $.ajax({
+                        url: '/api/v1/visitors/change_address/' + result,
+                        success: function(res) {
+                            setTimeout(function(){
+                                $(_this).attr('disabled', null);
+                            }, 3000);
+
+                            $('.active-email').animate({ opacity: 1 }).html(res.email + '@swift10minutemail.com', { queue: true });
+                        },
+                        error: function(res) {
+                            setTimeout(function(){
+                                vex.dialog.alert(res.responseJSON.error.exception[0].message);
+                            }, 400);
+                        }
+                    });
+                }
+            }
+        });
+
+        return false;
+    });
+
 }());

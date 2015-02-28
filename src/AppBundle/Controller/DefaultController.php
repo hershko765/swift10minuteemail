@@ -2,6 +2,7 @@
 
 namespace AppBundle\Controller;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use SourceBundle\Base\Controller;
 use SourceBundle\Helpers\Arr;
@@ -22,7 +23,7 @@ class DefaultController extends Controller
     {
         $cookies = $request->cookies->all();
         $visitor = NULL;
-        $renewed = FALSE;
+        $status = 'new';
 
         if (Arr::get($cookies, 'vid'))
         {
@@ -39,13 +40,32 @@ class DefaultController extends Controller
                     $visitor = NULL;
                     throw new NotFoundHttpException('Visitor is out of date');
                 }
+
+                $status = 'visitor';
             }
             catch(NotFoundHttpException $e)
             {
-                $renewed = Arr::get($cookies, 'vid');
+                $status = 'renewed';
             }
         }
+        else
+        {
+            /**
+             * @var $visitors ArrayCollection
+             */
+            $visitors = $this->getHandler('Visitor', 'Collect')
+                ->setFilters([ 'ip' => $request->getClientIp(), 'is_open' => date('Y-m-d H:i:s') ])
+                ->execute();
 
+            if ($visitors->first())
+            {
+                $visitor = $visitors->first();
+                $response = new Response();
+                $response->headers->setCookie(new Cookie('vid', $visitor->getId()));
+                $response->sendHeaders();
+                $status = 'visitor_ip';
+            }
+        }
         if ( ! $visitor)
         {
             $visitor = $this->getHandler('Visitor', 'Register')->execute();
@@ -57,7 +77,7 @@ class DefaultController extends Controller
 
         return [
             'visitor' => $visitor,
-            'renewed' => $renewed
+            'status' => $status
         ];
     }
 }

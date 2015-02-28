@@ -32,7 +32,7 @@ class HandlerGateway {
 	 * @throws Exception
 	 * @return HandlerManager object
 	 */
-	public function getHandler($entity, $handler, $bundle = FALSE)
+	public function getHandler($entity, $handler, $bundle = 'App')
 	{
 		// Creating class alias for handler container
 		$handler_alias = strtolower($bundle).'_'.strtolower($entity).'_'.strtolower($handler);

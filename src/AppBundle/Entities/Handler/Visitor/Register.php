@@ -52,7 +52,7 @@ class Register extends HandlerManager implements Handler {
         return $repo->save($visitor);
     }
 
-    private function generateVisitor($length = 10)
+    public function generateVisitor($length = 10)
     {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyz';
         $charactersLength = strlen($characters);

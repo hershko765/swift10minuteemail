@@ -108,16 +108,11 @@ abstract class Repository extends Core {
 	 *
 	 * @param $id
 	 */
-	public function delete($id)
+	public function delete($entity)
 	{
 		$em = $this->getEntityManager();
-
-		$entity = $this->find($id);
-		if ($entity)
-		{
-			$em->remove($entity);
-			$em->flush();
-		}
+        $em->remove($entity);
+        $em->flush();
 
 		return $entity;
 	}

@@ -1,6 +1,6 @@
 <?php
 
-namespace AppBundle\Entities\Handler\Visitor;
+namespace AppBundle\Entities\Handler\Email\History;
 
 use SourceBundle\Base\HandlerManager;
 use SourceBundle\Interfaces\Handler;
@@ -29,8 +29,9 @@ class Delete extends HandlerManager implements Handler {
 
 	public function execute()
 	{
-		$repository = $this->em->getRepository('AppManagerBundle:Model\Visitor');
-		return $repository->delete($this->id);
+		$repository = $this->em->getRepository('AppManagerBundle:Model\Email\History');
+
+        return $repository->delete($this->id);
 	}
 }
  

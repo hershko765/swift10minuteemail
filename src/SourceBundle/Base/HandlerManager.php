@@ -71,7 +71,7 @@ abstract class HandlerManager implements Handler {
 	 * @param bool $bundle
 	 * @return HandlerManager
 	 */
-	protected function getHandler($entity, $handler, $bundle = FALSE)
+	protected function getHandler($entity, $handler, $bundle = 'App')
 	{
 		return $this->handlerGateway->getHandler($entity, $handler, $bundle);
 	}

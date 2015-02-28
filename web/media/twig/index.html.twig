@@ -21,19 +21,30 @@
                     <div class="row">
                         <div class="col-md-7 col-xs-12">
                             <h2>
-                                <strong>{{ visitor.getEmail() }}@swift10minutemail.com</strong>
+                                <strong class="active-email">{{ visitor.getEmail() }}@swift10minutemail.com</strong>
                             </h2>
                         </div>
-                        <div class="clearfix hidden visible-sm visible-xs"></div>
-                        <div class="col-md-5 col-xs-12 pull-right main-action-buttons">
-                            <div class="btn-group">
-                                <a href="" class="btn btn-primary" id="add_time">
-                                    <span class="fa fa-clock-o"></span> &nbsp; &nbsp;
-                                    Give me more time</a>
-                            </div>
-                        </div>
+                        <div class="clearfix "></div>
                     </div>
                     <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-5 col-xs-12 main-action-buttons">
+                        <div class="btn-group">
+                            <a href="" class="btn btn-primary" id="add_time">
+                                Give me more time</a>
+                        </div>
+                        <div class="btn-group">
+                            <a href="" class="btn btn-primary" id="change-address">
+                                Change Address</a>
+                        </div>
+                        <div class="btn-group">
+                            <a href="" class="btn btn-danger" id="custom-address">
+                                Custom Address</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="clearfix"></div>
@@ -47,6 +58,23 @@
             <div class="clearfix"></div>
             <div class="col-md-12">
                 <div id="swift-table-region"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="change-address" tabindex="-1" role="dialog" data-backdrop="static">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Email Content</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="modal-content-region"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>

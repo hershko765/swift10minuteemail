@@ -170,4 +170,21 @@ class VisitorController extends Base\Controller {
 
         return $visitor->asArray();
     }
+
+    /**
+     * Change Email Address
+     * @get("/api/v1/visitors/change_address/{address}")
+     * @throws NotFoundHttpException when page not exist
+     * @Annotations\View(templateVar="Visitor")
+     */
+    public function changeVisitorAddressAction(Request $request, $address = NULL)
+    {
+        /**
+         * @var $handler Visitor\Change
+         */
+        $handler  = $this->getHandler('Visitor', 'Change');
+        $visitor = $handler->setAddress($address)->execute();
+
+        return $visitor->asArray();
+    }
 }
