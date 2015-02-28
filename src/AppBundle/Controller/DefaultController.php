@@ -24,7 +24,6 @@ class DefaultController extends Controller
         $cookies = $request->cookies->all();
         $visitor = NULL;
         $status = 'new';
-
         if (Arr::get($cookies, 'vid'))
         {
             try {
