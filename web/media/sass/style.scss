@@ -67,18 +67,23 @@ body>.container {
     small { display: block }
   }
 
+  .main-action-buttons {
+    text-align: center;
+  }
+
   .page-header h2 {
     text-align: center;
   }
 
   .btn-group {
-    display: block;
     margin: auto;
     overflow: auto;
     width: 268px;
+    padding: 10px;
 
     a {
       width: 100%;
+      padding: 18px;
     }
   }
 
