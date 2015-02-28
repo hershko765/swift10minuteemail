@@ -34,6 +34,10 @@ class Change extends HandlerManager implements Handler {
      */
     protected $address;
 
+    protected $not_allowed = [
+        'admin', 'swiftmail', 'django', 'django576'
+    ];
+
     public function setAddress($address)
     {
         $this->address = $address;
@@ -64,7 +68,11 @@ class Change extends HandlerManager implements Handler {
             $register_handler = $this->getHandler('Visitor', 'Register');
             $this->address = $register_handler->generateVisitor(10);
         }
-
+        else
+        {
+            if (in_array($this->address, $this->not_allowed));
+            throw new PreconditionFailedHttpException('Email address is not allowed! please select anther one');
+        }
         /**
          * @var $exists_address ArrayCollection
          */
