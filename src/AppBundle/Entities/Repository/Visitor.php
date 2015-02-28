@@ -20,6 +20,7 @@ class Visitor extends Repository {
         [ 'email', 'email', '=' ],
         [ 'is_closed', 'close_date', '<' ],
         [ 'is_open', 'close_date', '>' ],
+        [ 'ip', 'ip', '=' ],
     ];
 
 	/**
