@@ -70,8 +70,8 @@ class Change extends HandlerManager implements Handler {
         }
         else
         {
-            if (in_array($this->address, $this->not_allowed));
-            throw new PreconditionFailedHttpException('Email address is not allowed! please select anther one');
+            if (in_array($this->address, $this->not_allowed))
+                throw new PreconditionFailedHttpException('Email address is not allowed! please select anther one');
         }
         /**
          * @var $exists_address ArrayCollection
