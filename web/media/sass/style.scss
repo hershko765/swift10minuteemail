@@ -7,6 +7,10 @@
 
 @import "vex/vex";
 @import "vex/vex-theme-os";
+
+// Code Prettify Library
+@import "prettify";
+
 // Sticky footer
 @import "footer";
 
@@ -59,6 +63,10 @@ body>.container {
   word-wrap: break-word;
 }
 
+.read-email-btn {
+  cursor: pointer;
+}
+
 @media (max-width: $screen-md) {
 
   .jumbotron h1{
@@ -89,10 +97,6 @@ body>.container {
 
   .container {
     width: 100%;
-  }
-
-  .read-email-btn {
-    cursor: pointer;
   }
 }
 

@@ -83,19 +83,7 @@
         <td><%= id %></td>
         <td><%= fromName %> <small>&lt;<%= fromAddress %>&gt;</small></td>
         <td><%= subject %></td>
-        <td class="hidden-sm hidden-xs"><a href="" class="read-email-btn" data-email="<%= id %>"><%= content_text.substring(0, 10) %>..</a></td>
         <td><%= created_formatted %></td>
-        <td class="hidden-sm hidden-xs">
-            <div class="btn-group">
-                <button type="button" class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    More <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a href="#" class="read-email-btn" data-email="<%= id %>">Content</a></li>
-                    <li><a href="#" class="headers-btn" data-email="<%= id %>">Headers</a></li>
-                </ul>
-            </div>
-        </td>
     </script>
     <script type="text/html" id="swift-table">
         <table class="table table-bordered table-hover ">
@@ -104,9 +92,7 @@
                 <th>#</th>
                 <th>From</th>
                 <th>Subject</th>
-                <th class="hidden-sm hidden-xs">Preview</th>
                 <th>Date</th>
-                <th class="hidden-sm hidden-xs">...</th>
             </tr>
             </thead>
             <tbody></tbody>
@@ -127,7 +113,28 @@
                         <h4 class="modal-title" id="myModalLabel">Email Content</h4>
                     </div>
                     <div class="modal-body">
-                        <div id="modal-content-region"></div>
+                        <div role="tabpanel">
+
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active"><a href="#tab-email" aria-controls="home" role="tab" data-toggle="tab">Email</a></li>
+                                <li role="presentation"><a href="#tab-headers" aria-controls="profile" role="tab" data-toggle="tab">Headers</a></li>
+                                <li role="presentation"><a href="#tab-spam-score" aria-controls="messages" role="tab" data-toggle="tab">Spam Score</a></li>
+                            </ul>
+                            <hr/>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="tab-email">
+                                    <div id="modal-content-region"></div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="tab-headers">
+                                    <div id="modal-headers-region"></div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="tab-spam-score">
+                                    <div id="spam-score-region"><h4 class="text-center">Coming Soon !</h4></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

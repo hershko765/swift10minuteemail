@@ -39,17 +39,55 @@
     swiftApp.Views.ModalView = Backbone.Marionette.LayoutView.extend({
         template: "#modal-view",
         regions: {
-            modalContentRegion: '#modal-content-region'
+            modalContentRegion: '#modal-content-region',
+            modalHeadersRegion: '#modal-headers-region',
+            modalSourceRegion: '#modal-source-region'
         },
         onShow: function() {
             var layoutView = this;
             this.modalContentRegion.on('show', function(view, region){
                 var $modal = layoutView.$el.find('#modal-layout-view');
-                $modal.modal('show');
+                var emailHTML = layoutView.$el.find('#modal-content-region')[0].innerHTML;
+                layoutView.$el.find('#modal-content-region').html('');
+                layoutView.$el.find('#modal-content-region').append(
+                    $('<iframe></iframe>', { id: 'modal-frame-content' })
+                );
 
+                $iframe = layoutView.$el.find('#modal-frame-content');
+                $frameDocument = $($iframe[0].contentWindow.document);
+                $frameDocument[0].open();
+                $frameDocument[0].write(emailHTML);
+                $frameDocument[0].close();
+
+                var frameHeight = $($('iframe')[0].contentWindow.document).height();
+                $iframe.css('height', (frameHeight + 10) + 'px');
+
+                setTimeout(function(){
+                    var frameHeight = $($('iframe')[0].contentWindow.document).height();
+                    $iframe.css('height', (frameHeight + 10) + 'px');
+                }, 500);
+
+                $iframe.css({
+                    width: '100%',
+                    overflow: 'hidden',
+                    border: 'none'
+                });
+
+                $modal.modal('show');
                 $modal.on('hide.bs.modal', function(){
                     region.reset();
                 });
+
+                layoutView.$el.find('#modal-layout-view').on('shown.bs.tab', function(){
+                    var height = $(this).find('.modal-body').height() + 200;
+                    if ($(document).height() > height) {
+                        $(this).find('.modal-backdrop').css('height', '100%');
+                    }
+                    else {
+                        $(this).find('.modal-backdrop').css('height', (height) + 'px');
+                    }
+                });
+
             });
         }
     });
@@ -67,33 +105,15 @@
             }
         },
         onRender: function() {
-            if (window.innerWidth <= 991) {
-                this.$el
-                    .attr('class', 'read-email-btn')
-                    .attr('data-email', this.model.get('id'));
-            }
-            else {
-                this.$el
-                    .attr('class', null)
-                    .attr('data-email', null);
-            }
+            this.$el
+                .attr('class', 'read-email-btn')
+                .attr('data-email', this.model.get('id'));
+
         },
         onShow: function() {
-            var _this = this;
-            $(window).on('resize.table-resize', function(){
-                if (_this.isSmall) {
-                    if (window.innerWidth > 991) {
-                        _this.isSmall = false;
-                        _this.render();
-                    };
-                }
-                else {
-                    if (window.innerWidth <= 991) {
-                        _this.isSmall = true;
-                        _this.render();
-                    };
-                }
-            });
+            if (this.model.get('new')) {
+                this.$el.addClass('success');
+            }
         }
     });
 
@@ -121,6 +141,7 @@
         iosocket.emit('add:visitor', Server.Visitor.id);
 
         iosocket.on('email:received', function(id, email) {
+            email.new = 1;
             swiftEmailCollection.add(email);
         });
 
@@ -175,14 +196,36 @@
     var modalView = new swiftApp.Views.ModalView();
     App.modalRegion.show(modalView);
 
-    $('body').on('click', '.read-email-btn', function(){
+    $('body').on('click', '.read-email-btn', function(e){
+        e.preventDefault();
+        $(this).removeClass('success');
         var emailModel = swiftEmailCollection.get($(this).attr('data-email'));
+
+        if ( ! emailModel.get('headers_changed')) {
+            var headers = JSON.parse(emailModel.get('headers'));
+
+            $.each(headers, function(idx, val){
+                val = safe_tags_replace(val);
+                headers[idx] = val;
+            });
+
+            emailModel.set('headers', headers);
+            emailModel.set('headers_changed', 1);
+        }
+
+        emailModel.set('source_html', emailModel.get('content'));
 
         var emailContentView = new swiftApp.Views.EmailContentView({
             model: emailModel
         });
 
+        var emailHeadersView = new swiftApp.Views.EmailHeadersView({
+            model: emailModel
+        });
+
+
         modalView.modalContentRegion.show(emailContentView);
+        modalView.modalHeadersRegion.show(emailHeadersView);
 
         return false;
     });
@@ -206,17 +249,6 @@
     $('body').on('click', '.headers-btn', function(){
         var emailModel = swiftEmailCollection.get($(this).attr('data-email'));
 
-        if ( ! emailModel.get('headers_changed')) {
-            var headers = JSON.parse(emailModel.get('headers'));
-
-            $.each(headers, function(idx, val){
-                val = safe_tags_replace(val);
-                headers[idx] = val;
-            });
-
-            emailModel.set('headers', headers);
-            emailModel.set('headers_changed', 1);
-        }
 
         var emailContentView = new swiftApp.Views.EmailHeadersView({
             model: emailModel
@@ -276,5 +308,4 @@
 
         return false;
     });
-
 }());

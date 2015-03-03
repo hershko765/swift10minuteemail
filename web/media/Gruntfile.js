@@ -30,6 +30,10 @@ module.exports = function(grunt){
                         'vendor/bootstrap-sass/assets/javascripts/bootstrap.js',
                         'vendor/vex/js/vex.combined.min.js',
                         'vendor/moment/moment.js',
+                        'vendor/SyntaxHighlighter/scripts/XRegExp.js',
+                        'vendor/SyntaxHighlighter/scripts/shCore.js',
+                        'vendor/SyntaxHighlighter/scripts/shBrushXml.js',
+                        'vendor/SyntaxHighlighter/scripts/shBrushJScript.js',
                         'js/**/*.js',
                         '!js/build/main.min.js'
                     ]

@@ -9,6 +9,7 @@
     "marionette": "~2.3.2",
     "font-awsome": "~4.3.0",
     "bootbox": "~4.4.0",
-    "vex": "~2.3.2"
+    "vex": "~2.3.2",
+    "google-code-prettify": "~1.0.4"
   }
 }
