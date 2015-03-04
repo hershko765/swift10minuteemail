@@ -75,8 +75,20 @@ class DefaultController extends Controller
         }
 
         return [
+            'page' => 'home',
             'visitor' => $visitor,
             'status' => $status
+        ];
+    }
+
+    /**
+     * @Route("/about", name="about")
+     * @Template("about.html.twig")
+     */
+    public function aboutAction()
+    {
+        return [
+            'page' => 'about'
         ];
     }
 }

@@ -1,4 +1,11 @@
 {% extends "layout.html.twig" %}
+    {% block preload_scripts %}
+<script>
+    var Server = {};
+    Server.Visitor = {{ visitor.asJSON() | raw }};
+    Server.streamerHost = 'http://swift10minutemail.com:8080';
+</script>
+{% endblock %}
 {% block content %}
     <!-- Fixed navbar -->
     <!-- Begin page content -->
@@ -11,6 +18,8 @@
                 This free service will provide you with disposable email address for short time, you are able to receive
                 email in your temporary email inbox (UNLIMITED), your able to read the email as you would in your real mailbox !
             </p>
+            <button class="btn btn-danger btn-lg pull-right" id="guider-button" data-toggle="modal" data-target="#guiders-modal">Getting Started</button>
+            <div class="clearfix"></div>
         </div>
     </div>
     <div class="container">
@@ -70,6 +79,22 @@
                 </div>
                 <div class="modal-body">
                     <div id="modal-content-region"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="guiders-modal" tabindex="-1" role="dialog" data-backdrop="static">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Learn How To Use Your 10 Minute Mail</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="player"></div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

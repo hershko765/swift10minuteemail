@@ -8,15 +8,11 @@
 @import "vex/vex";
 @import "vex/vex-theme-os";
 
-// Code Prettify Library
-@import "prettify";
-
 // Sticky footer
 @import "footer";
 
 // Yeti Template
 @import "yeti";
-
 
 body {
 
@@ -26,6 +22,12 @@ body {
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
   font-size: 16px;
 }
+
+.ad-box-400 {
+  height: 400px;
+  background: #eee;
+  margin-bottom: 50px;
+};
 
 .table {
   background: #fff;
