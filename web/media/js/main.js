@@ -46,34 +46,10 @@
         onShow: function() {
             var layoutView = this;
             this.modalContentRegion.on('show', function(view, region){
+
                 var $modal = layoutView.$el.find('#modal-layout-view');
-                var emailHTML = layoutView.$el.find('#modal-content-region')[0].innerHTML;
-                layoutView.$el.find('#modal-content-region').html('');
-                layoutView.$el.find('#modal-content-region').append(
-                    $('<iframe></iframe>', { id: 'modal-frame-content' })
-                );
-
-                $iframe = layoutView.$el.find('#modal-frame-content');
-                $frameDocument = $($iframe[0].contentWindow.document);
-                $frameDocument[0].open();
-                $frameDocument[0].write(emailHTML);
-                $frameDocument[0].close();
-
-                var frameHeight = $($iframe[0].contentWindow.document).height();
-                $iframe.css('height', (frameHeight + 10) + 'px');
-
-                setTimeout(function(){
-                    var frameHeight = $($('iframe')[0].contentWindow.document).height();
-                    $iframe.css('height', (frameHeight + 10) + 'px');
-                }, 500);
-
-                $iframe.css({
-                    width: '100%',
-                    overflow: 'hidden',
-                    border: 'none'
-                });
-
                 $modal.modal('show');
+
                 $modal.on('hide.bs.modal', function(){
                     region.reset();
                 });
@@ -92,7 +68,7 @@
         }
     });
 
-    
+
     swiftApp.Views.EmailRow = Backbone.Marionette.ItemView.extend({
         tagName: "tr",
         template: "#swift-row",

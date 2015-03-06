@@ -19,7 +19,6 @@
                 This free service will provide you with disposable email address for short time, you are able to receive
                 email in your temporary email inbox (UNLIMITED), your able to read the email as you would in your real mailbox !
             </p>
-            <button class="btn btn-danger btn-lg pull-right" id="guider-button" data-toggle="modal" data-target="#guiders-modal">Getting Started</button>
             <div class="clearfix"></div>
         </div>
     </div>
@@ -107,7 +106,13 @@
 {% block templates %}
     <script type="text/html" id="swift-row">
         <td><%= id %></td>
-        <td><%= fromName %> <small>&lt;<%= fromAddress %>&gt;</small></td>
+        <td>
+            <% if (fromName) { %>
+            <strong><%= fromName %></strong> <small>&lt;<%= fromAddress %>&gt;</small>
+            <% } else { %>
+            <strong><%= fromAddress %></strong>
+            <% } %>
+        </td>
         <td><%= subject %></td>
         <td><%= created_formatted %></td>
     </script>
