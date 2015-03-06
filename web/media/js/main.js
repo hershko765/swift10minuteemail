@@ -59,7 +59,7 @@
                 $frameDocument[0].write(emailHTML);
                 $frameDocument[0].close();
 
-                var frameHeight = $($('iframe')[0].contentWindow.document).height();
+                var frameHeight = $($iframe[0].contentWindow.document).height();
                 $iframe.css('height', (frameHeight + 10) + 'px');
 
                 setTimeout(function(){
@@ -92,6 +92,7 @@
         }
     });
 
+    
     swiftApp.Views.EmailRow = Backbone.Marionette.ItemView.extend({
         tagName: "tr",
         template: "#swift-row",

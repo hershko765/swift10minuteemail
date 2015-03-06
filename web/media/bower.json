@@ -8,9 +8,9 @@
     "moment": "~2.9.0",
     "marionette": "~2.3.2",
     "font-awsome": "~4.3.0",
-    "bootbox": "~4.4.0",
     "vex": "~2.3.2",
     "google-code-prettify": "~1.0.4",
-    "mediaelement": "~2.16.4"
+    "mediaelement": "~2.16.4",
+    "intro.js": "~1.0.0"
   }
 }
