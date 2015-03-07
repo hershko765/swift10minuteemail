@@ -31,7 +31,12 @@ module.exports = function(grunt){
                         'vendor/vex/js/vex.combined.min.js',
                         'vendor/moment/moment.js',
                         'js/**/*.js',
-                        '!js/build/main.min.js'
+                        '!js/build/*'
+                    ],
+                    'js/build/about.min.js': [
+                        'vendor/jquery/dist/jquery.js',
+                        'vendor/bootstrap-sass/assets/javascripts/bootstrap.js',
+                        '!js/build/*'
                     ]
                 }
             }

@@ -68,7 +68,6 @@
         }
     });
 
-
     swiftApp.Views.EmailRow = Backbone.Marionette.ItemView.extend({
         tagName: "tr",
         template: "#swift-row",
