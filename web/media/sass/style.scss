@@ -33,8 +33,9 @@ body {
   }
 };
 
-.ad-box-400-responsive {
-  height: 400px;
+.ad-box-responsive {
+  height: auto;
+  margin: 45px 0;
 }
 
 .table {
@@ -67,6 +68,7 @@ body {
 
 body>.container {
   padding-top: 0;
+  position: relative;
 }
 
 .email-content {
@@ -76,6 +78,19 @@ body>.container {
 .read-email-btn {
   cursor: pointer;
 }
+
+.right-ad-container {
+  position: absolute;
+  margin-right: -162px;
+  right: 0;
+};
+
+.left-ad-container {
+  position: absolute;
+  margin-left: -162px;
+  left: 0;
+};
+
 
 @media (max-width: $screen-md) {
 
@@ -114,6 +129,11 @@ body>.container {
   .page-header h2 {
     font-size: 25px;
   }
+}
+
+@media (max-width: 1530px) {
+    .right-ad-container { display: none };
+    .left-ad-container { display: none };
 }
 
 @media (max-width: 512px) {

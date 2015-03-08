@@ -26,38 +26,40 @@
       <file leaf-file-name="layout.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/media/twig/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="13" selection-start="3283" selection-end="3283" vertical-scroll-proportion="-27.181818" vertical-offset="468" max-vertical-offset="1659">
+            <state line="65" column="13" selection-start="3283" selection-end="3283" vertical-scroll-proportion="-41.363636" vertical-offset="0" max-vertical-offset="1659">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.twig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/media/twig/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="18" selection-start="4168" selection-end="4168" vertical-scroll-proportion="-12.862069" vertical-offset="1270" max-vertical-offset="4662">
+            <state line="32" column="21" selection-start="1357" selection-end="1357" vertical-scroll-proportion="0.7156287" vertical-offset="63" max-vertical-offset="5166">
               <folding>
-                <element signature="e#605#657#0" expanded="true" />
-                <element signature="e#3859#3911#0" expanded="true" />
-                <marker date="1425843668801" expanded="true" signature="5838:6068" placeholder="..." />
-                <marker date="1425843668801" expanded="true" signature="6261:6502" placeholder="..." />
-                <marker date="1425843668801" expanded="true" signature="6281:6457" placeholder="..." />
-                <marker date="1425843668801" expanded="true" signature="6298:6436" placeholder="..." />
-                <marker date="1425843668801" expanded="true" signature="6594:6673" placeholder="..." />
-                <marker date="1425843668801" expanded="true" signature="6863:9081" placeholder="..." />
-                <marker date="1425843668801" expanded="true" signature="6911:9066" placeholder="..." />
-                <marker date="1425843668801" expanded="true" signature="6955:9047" placeholder="..." />
-                <marker date="1425843668801" expanded="true" signature="7002:7263" placeholder="..." />
-                <marker date="1425843668801" expanded="true" signature="7308:8844" placeholder="..." />
-                <marker date="1425843668801" expanded="true" signature="7354:8817" placeholder="..." />
-                <marker date="1425843668801" expanded="true" signature="7470:7966" placeholder="..." />
-                <marker date="1425843668801" expanded="true" signature="8101:8786" placeholder="..." />
-                <marker date="1425843668801" expanded="true" signature="8194:8307" placeholder="..." />
-                <marker date="1425843668801" expanded="true" signature="8395:8508" placeholder="..." />
-                <marker date="1425843668801" expanded="true" signature="8599:8751" placeholder="..." />
-                <marker date="1425843668801" expanded="true" signature="8891:9024" placeholder="..." />
-                <marker date="1425843668801" expanded="true" signature="9180:9222" placeholder="..." />
-                <marker date="1425843668801" expanded="true" signature="9321:9493" placeholder="..." />
+                <element signature="e#571#624#0" expanded="true" />
+                <element signature="e#1086#1139#0" expanded="true" />
+                <element signature="e#1649#1670#0" expanded="true" />
+                <element signature="e#4946#4967#0" expanded="true" />
+                <marker date="1425844807501" expanded="true" signature="6937:7167" placeholder="..." />
+                <marker date="1425844807501" expanded="true" signature="7360:7601" placeholder="..." />
+                <marker date="1425844807501" expanded="true" signature="7380:7556" placeholder="..." />
+                <marker date="1425844807501" expanded="true" signature="7397:7535" placeholder="..." />
+                <marker date="1425844807501" expanded="true" signature="7693:7772" placeholder="..." />
+                <marker date="1425844807501" expanded="true" signature="7962:10180" placeholder="..." />
+                <marker date="1425844807501" expanded="true" signature="8010:10165" placeholder="..." />
+                <marker date="1425844807501" expanded="true" signature="8054:10146" placeholder="..." />
+                <marker date="1425844807501" expanded="true" signature="8101:8362" placeholder="..." />
+                <marker date="1425844807501" expanded="true" signature="8407:9943" placeholder="..." />
+                <marker date="1425844807501" expanded="true" signature="8453:9916" placeholder="..." />
+                <marker date="1425844807501" expanded="true" signature="8569:9065" placeholder="..." />
+                <marker date="1425844807501" expanded="true" signature="9200:9885" placeholder="..." />
+                <marker date="1425844807501" expanded="true" signature="9293:9406" placeholder="..." />
+                <marker date="1425844807501" expanded="true" signature="9494:9607" placeholder="..." />
+                <marker date="1425844807501" expanded="true" signature="9698:9850" placeholder="..." />
+                <marker date="1425844807501" expanded="true" signature="9990:10123" placeholder="..." />
+                <marker date="1425844807501" expanded="true" signature="10279:10321" placeholder="..." />
+                <marker date="1425844807501" expanded="true" signature="10420:10592" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -66,10 +68,12 @@
       <file leaf-file-name="about.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/media/twig/about.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="28" selection-start="3425" selection-end="3446" vertical-scroll-proportion="-10.551724" vertical-offset="753" max-vertical-offset="1890">
+            <state line="87" column="45" selection-start="4465" selection-end="4475" vertical-scroll-proportion="-5.8448277" vertical-offset="1488" max-vertical-offset="2352">
               <folding>
-                <element signature="e#3062#3115#0" expanded="true" />
-                <element signature="e#3699#3720#0" expanded="true" />
+                <element signature="e#370#423#0" expanded="true" />
+                <element signature="e#885#938#0" expanded="true" />
+                <element signature="e#4095#4148#0" expanded="true" />
+                <element signature="e#4728#4749#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,7 +82,7 @@
       <file leaf-file-name="_introjs.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/media/sass/_introjs.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="609" column="0" selection-start="14860" selection-end="14860" vertical-scroll-proportion="0.0" vertical-offset="11966" max-vertical-offset="12915">
+            <state line="609" column="0" selection-start="14860" selection-end="14860" vertical-scroll-proportion="-24.939394" vertical-offset="11966" max-vertical-offset="12915">
               <folding />
             </state>
           </provider>
@@ -93,10 +97,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/media/sass/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="16" selection-start="686" selection-end="686" vertical-scroll-proportion="0.5949074" vertical-offset="242" max-vertical-offset="3192">
+            <state line="35" column="18" selection-start="646" selection-end="663" vertical-scroll-proportion="-3.3614457" vertical-offset="456" max-vertical-offset="3612">
               <folding />
             </state>
           </provider>
@@ -172,9 +176,9 @@
         <option value="$USER_HOME$/Downloads/emails (1).sql" />
         <option value="$PROJECT_DIR$/web/media/Gruntfile.js" />
         <option value="$PROJECT_DIR$/web/media/js/main.js" />
-        <option value="$PROJECT_DIR$/web/media/twig/index.html.twig" />
-        <option value="$PROJECT_DIR$/web/media/twig/about.html.twig" />
         <option value="$PROJECT_DIR$/web/media/sass/style.scss" />
+        <option value="$PROJECT_DIR$/web/media/twig/about.html.twig" />
+        <option value="$PROJECT_DIR$/web/media/twig/index.html.twig" />
       </list>
     </option>
   </component>
@@ -691,13 +695,6 @@
         <state line="44" column="0" selection-start="1290" selection-end="24068" vertical-scroll-proportion="0.41511628" vertical-offset="567" max-vertical-offset="1470" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/media/sass/_introjs.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="609" column="0" selection-start="14860" selection-end="14860" vertical-scroll-proportion="0.0" vertical-offset="11966" max-vertical-offset="12915">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/media/Gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="0" selection-start="1412" selection-end="1412" vertical-scroll-proportion="0.0" vertical-offset="106" max-vertical-offset="1995">
@@ -712,56 +709,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/media/twig/layout.html.twig">
+    <entry file="file://$PROJECT_DIR$/web/media/sass/_introjs.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="13" selection-start="3283" selection-end="3283" vertical-scroll-proportion="-27.181818" vertical-offset="468" max-vertical-offset="1659">
+        <state line="609" column="0" selection-start="14860" selection-end="14860" vertical-scroll-proportion="-24.939394" vertical-offset="11966" max-vertical-offset="12915">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/media/twig/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="18" selection-start="4168" selection-end="4168" vertical-scroll-proportion="-12.862069" vertical-offset="1270" max-vertical-offset="4662">
-          <folding>
-            <element signature="e#605#657#0" expanded="true" />
-            <element signature="e#3859#3911#0" expanded="true" />
-            <marker date="1425843668801" expanded="true" signature="5838:6068" placeholder="..." />
-            <marker date="1425843668801" expanded="true" signature="6261:6502" placeholder="..." />
-            <marker date="1425843668801" expanded="true" signature="6281:6457" placeholder="..." />
-            <marker date="1425843668801" expanded="true" signature="6298:6436" placeholder="..." />
-            <marker date="1425843668801" expanded="true" signature="6594:6673" placeholder="..." />
-            <marker date="1425843668801" expanded="true" signature="6863:9081" placeholder="..." />
-            <marker date="1425843668801" expanded="true" signature="6911:9066" placeholder="..." />
-            <marker date="1425843668801" expanded="true" signature="6955:9047" placeholder="..." />
-            <marker date="1425843668801" expanded="true" signature="7002:7263" placeholder="..." />
-            <marker date="1425843668801" expanded="true" signature="7308:8844" placeholder="..." />
-            <marker date="1425843668801" expanded="true" signature="7354:8817" placeholder="..." />
-            <marker date="1425843668801" expanded="true" signature="7470:7966" placeholder="..." />
-            <marker date="1425843668801" expanded="true" signature="8101:8786" placeholder="..." />
-            <marker date="1425843668801" expanded="true" signature="8194:8307" placeholder="..." />
-            <marker date="1425843668801" expanded="true" signature="8395:8508" placeholder="..." />
-            <marker date="1425843668801" expanded="true" signature="8599:8751" placeholder="..." />
-            <marker date="1425843668801" expanded="true" signature="8891:9024" placeholder="..." />
-            <marker date="1425843668801" expanded="true" signature="9180:9222" placeholder="..." />
-            <marker date="1425843668801" expanded="true" signature="9321:9493" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/media/twig/about.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="28" selection-start="3425" selection-end="3446" vertical-scroll-proportion="-10.551724" vertical-offset="753" max-vertical-offset="1890">
+        <state line="87" column="45" selection-start="4465" selection-end="4475" vertical-scroll-proportion="-5.8448277" vertical-offset="1488" max-vertical-offset="2352">
           <folding>
-            <element signature="e#3062#3115#0" expanded="true" />
-            <element signature="e#3699#3720#0" expanded="true" />
+            <element signature="e#370#423#0" expanded="true" />
+            <element signature="e#885#938#0" expanded="true" />
+            <element signature="e#4095#4148#0" expanded="true" />
+            <element signature="e#4728#4749#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/media/sass/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="16" selection-start="686" selection-end="686" vertical-scroll-proportion="0.5949074" vertical-offset="242" max-vertical-offset="3192">
+        <state line="35" column="18" selection-start="646" selection-end="663" vertical-scroll-proportion="-3.3614457" vertical-offset="456" max-vertical-offset="3612">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/media/twig/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="13" selection-start="3283" selection-end="3283" vertical-scroll-proportion="-41.363636" vertical-offset="0" max-vertical-offset="1659">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/media/twig/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="21" selection-start="1357" selection-end="1357" vertical-scroll-proportion="0.7156287" vertical-offset="63" max-vertical-offset="5166">
+          <folding>
+            <element signature="e#571#624#0" expanded="true" />
+            <element signature="e#1086#1139#0" expanded="true" />
+            <element signature="e#1649#1670#0" expanded="true" />
+            <element signature="e#4946#4967#0" expanded="true" />
+            <marker date="1425844807501" expanded="true" signature="6937:7167" placeholder="..." />
+            <marker date="1425844807501" expanded="true" signature="7360:7601" placeholder="..." />
+            <marker date="1425844807501" expanded="true" signature="7380:7556" placeholder="..." />
+            <marker date="1425844807501" expanded="true" signature="7397:7535" placeholder="..." />
+            <marker date="1425844807501" expanded="true" signature="7693:7772" placeholder="..." />
+            <marker date="1425844807501" expanded="true" signature="7962:10180" placeholder="..." />
+            <marker date="1425844807501" expanded="true" signature="8010:10165" placeholder="..." />
+            <marker date="1425844807501" expanded="true" signature="8054:10146" placeholder="..." />
+            <marker date="1425844807501" expanded="true" signature="8101:8362" placeholder="..." />
+            <marker date="1425844807501" expanded="true" signature="8407:9943" placeholder="..." />
+            <marker date="1425844807501" expanded="true" signature="8453:9916" placeholder="..." />
+            <marker date="1425844807501" expanded="true" signature="8569:9065" placeholder="..." />
+            <marker date="1425844807501" expanded="true" signature="9200:9885" placeholder="..." />
+            <marker date="1425844807501" expanded="true" signature="9293:9406" placeholder="..." />
+            <marker date="1425844807501" expanded="true" signature="9494:9607" placeholder="..." />
+            <marker date="1425844807501" expanded="true" signature="9698:9850" placeholder="..." />
+            <marker date="1425844807501" expanded="true" signature="9990:10123" placeholder="..." />
+            <marker date="1425844807501" expanded="true" signature="10279:10321" placeholder="..." />
+            <marker date="1425844807501" expanded="true" signature="10420:10592" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
