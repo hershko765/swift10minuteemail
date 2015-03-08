@@ -26,9 +26,16 @@ body {
 
 .ad-box-400 {
   height: 400px;
-  background: #eee;
   margin-bottom: 50px;
+
+  &.about-ad-box-1 {
+    margin-top: 74px;
+  }
 };
+
+.ad-box-400-responsive {
+  height: 400px;
+}
 
 .table {
   background: #fff;
