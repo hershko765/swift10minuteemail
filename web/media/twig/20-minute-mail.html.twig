@@ -1,0 +1,223 @@
+{% extends "layout.html.twig" %}
+    {% block preload_scripts %}
+<script>
+    var Server = {};
+    Server.Visitor = {{ visitor.asJSON() | raw }};
+    Server.streamerHost = 'http://swift10minutemail.com:8080';
+</script>
+{% endblock %}
+{% block seo_header %}
+    <meta name="keywords" content="temporary email address, disposable email, 20 minute mail, 30 minute mail">
+    <meta name="description" content="Let us handle your junk mail from not reliable websites taht request your email address, use our temporary email service to register and confirm">
+    <title>Swift 20 Minute Mail - Temporary Email Address</title>
+{% endblock %}
+{% block content %}
+    <!-- Fixed navbar -->
+    <!-- Begin page content -->
+    <div class="container">
+        <div class="right-ad-container">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- side ad - right -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:160px;height:600px"
+                 data-ad-client="ca-pub-4232269688571296"
+                 data-ad-slot="6748042168"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <a href='http://google.com/' data-intro='Hello step one!'></a>
+        <div class="jumbotron">
+            <div class="page-header">
+                <h1>Swift 20 Minute Email <small>Temporary Email Address</small></h1>
+            </div>
+            <p class="lead">
+                Let us handle your junk mail from not reliable websites taht request your email address,
+                use our temporary email service to register and confirm
+                your account in multiple website on the web ! or just use it to stay anonymous when someone is requesting your email
+            </p>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-header">
+                    <div class="row">
+                        <div class="col-md-7 col-xs-12">
+                            <h2>
+                                <strong class="active-email">{{ visitor.getEmail() }}@swift10minutemail.com</strong>
+                            </h2>
+                        </div>
+                        <div class="clearfix "></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-xs-12 main-action-buttons">
+                        <div class="btn-group">
+                            <a href="" class="btn btn-primary" id="add_time">
+                                Give me more time</a>
+                        </div>
+                        <div class="btn-group">
+                            <a href="" class="btn btn-primary" id="change-address">
+                                Change Address</a>
+                        </div>
+                        <div class="btn-group">
+                            <a href="" class="btn btn-danger" id="custom-address">
+                                Custom Address</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-12">
+                <h3>Your Swift Mail will be deleted in <strong><span id="time-minutes"></span> Minutes</strong></h3>
+
+                <div class="progress progress-striped">
+                    <div class="progress-bar progress-bar-success" id="visitor-time-progress"></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-12">
+                <div id="swift-table-region"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 ad-box-responsive">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- bottom homepage - responsive -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-4232269688571296"
+                     data-ad-slot="5271308964"
+                     data-ad-format="auto"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="change-address" tabindex="-1" role="dialog" data-backdrop="static">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Email Content</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="modal-content-region"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="guiders-modal" tabindex="-1" role="dialog" data-backdrop="static">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Learn How To Use Your 10 Minute Mail</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="player"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block templates %}
+    <script type="text/html" id="swift-row">
+        <td><%= id %></td>
+        <td>
+            <% if (fromName) { %>
+            <strong><%= fromName %></strong> <small>&lt;<%= fromAddress %>&gt;</small>
+            <% } else { %>
+            <strong><%= fromAddress %></strong>
+            <% } %>
+        </td>
+        <td><%= subject %></td>
+        <td><%= created_formatted %></td>
+    </script>
+    <script type="text/html" id="swift-table">
+        <table class="table table-bordered table-hover ">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>From</th>
+                <th>Subject</th>
+                <th>Date</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </script>
+    <script type="text/html" id="swift-table-empty">
+        <td colspan="6">
+            <h4 class="text-center">Your mail box is empty!</h4>
+        </td>
+    </script>
+    <script type="text/html" id="modal-view">
+        <!-- Modal -->
+        <div class="modal fade" id="modal-layout-view" tabindex="-1" role="dialog" data-backdrop="static">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Email Content</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div role="tabpanel">
+
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active"><a href="#tab-email" aria-controls="home" role="tab" data-toggle="tab">Email</a></li>
+                                <li role="presentation"><a href="#tab-headers" aria-controls="profile" role="tab" data-toggle="tab">Headers</a></li>
+                                <li role="presentation"><a href="#tab-spam-score" aria-controls="messages" role="tab" data-toggle="tab">Spam Score</a></li>
+                            </ul>
+                            <hr/>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="tab-email">
+                                    <div id="modal-content-region"></div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="tab-headers">
+                                    <div id="modal-headers-region"></div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="tab-spam-score">
+                                    <div id="spam-score-region"><h4 class="text-center">Coming Soon !</h4></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script type="text/html" id="email-content">
+        <div class="email-content">
+            <%= content %>
+        </div>
+    </script>
+    <script type="text/html" id="email-headers">
+        <div class="email-headers">
+            <% _.each(headers, function(val, idx){ %>
+                <p> <strong><%= idx %></strong><pre><%= val %></pre></code> </p>
+            <% }); %>
+        </div>
+    </script>
+{% endblock %}

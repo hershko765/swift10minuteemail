@@ -33,6 +33,28 @@ body {
   }
 };
 
+.product-box {
+  float: left;
+  width: 100%;
+  background: #FAFAFA;
+  text-align: center;
+  box-shadow: 0 0 2px 1px #CCD;
+  padding: 0 32px 19px 33px;
+  margin-top: 28px;
+  margin-bottom: 30px;
+
+  .btn {
+
+  }
+
+  .page-header {
+    margin: 0;
+    line-height: 63px;
+    padding: 0;
+    margin-bottom: 13px;
+  }
+}
+
 .ad-box-responsive {
   height: auto;
   margin: 45px 0;

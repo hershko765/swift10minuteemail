@@ -15,12 +15,25 @@ use AppBundle\Entities\Model\Visitor;
 
 class DefaultController extends Controller
 {
+
     /**
      * @Route("/", name="homepage")
      * @Template("index.html.twig")
      */
     public function indexAction(Request $request)
     {
+        return [
+            'page' => 'home'
+        ];
+    }
+
+    /**
+     * @Route("/10-minute-mail", name="10-minute-mail")
+     * @Route("/20-minute-mail", name="20-minute-mail")
+     */
+    public function swiftMailAction(Request $request)
+    {
+        $route_name = $request->get('_route');
         $cookies = $request->cookies->all();
         $visitor = NULL;
         $status = 'new';
@@ -74,11 +87,13 @@ class DefaultController extends Controller
             $response->sendHeaders();
         }
 
-        return [
+        $data = [
             'page' => 'home',
             'visitor' => $visitor,
             'status' => $status
         ];
+
+        return $this->render($route_name.'.html.twig', $data, new Response());
     }
 
     /**
