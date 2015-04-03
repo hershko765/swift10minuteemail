@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77dbec62-c72e-4895-bb24-a3fb38a1a9b0" name="Default" comment="" />
+    <list default="true" id="77dbec62-c72e-4895-bb24-a3fb38a1a9b0" name="Default" comment="debug">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/media/twig/about.html.twig" afterPath="$PROJECT_DIR$/web/media/twig/about.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/media/js/build/about.min.js" afterPath="$PROJECT_DIR$/web/media/js/build/about.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/media/twig/index.html.twig" afterPath="$PROJECT_DIR$/web/media/twig/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/media/js/build/main.min.js" afterPath="$PROJECT_DIR$/web/media/js/build/main.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="splitterUI.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,11 +29,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DefaultController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+      <file leaf-file-name="about.html.twig" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/media/twig/about.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="16" selection-start="588" selection-end="588" vertical-scroll-proportion="0.21259843" vertical-offset="0" max-vertical-offset="1911">
+            <state line="20" column="14" selection-start="950" selection-end="950" vertical-scroll-proportion="0.47945204" vertical-offset="0" max-vertical-offset="2226">
+              <folding>
+                <element signature="e#370#423#0" expanded="true" />
+                <element signature="e#715#741#0" expanded="true" />
+                <element signature="e#3874#3927#0" expanded="true" />
+                <element signature="e#4507#4528#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/media/twig/layout.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="25" selection-start="699" selection-end="699" vertical-scroll-proportion="-5.7272725" vertical-offset="21" max-vertical-offset="1659">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/media/twig/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="340" selection-end="633" vertical-scroll-proportion="-3.4310346" vertical-offset="53" max-vertical-offset="4515">
+              <folding>
+                <element signature="e#398#424#0" expanded="true" />
+                <element signature="e#3594#3615#0" expanded="true" />
+                <marker date="1428051602952" expanded="true" signature="5585:5815" placeholder="..." />
+                <marker date="1428051602952" expanded="true" signature="6008:6249" placeholder="..." />
+                <marker date="1428051602952" expanded="true" signature="6028:6204" placeholder="..." />
+                <marker date="1428051602952" expanded="true" signature="6045:6183" placeholder="..." />
+                <marker date="1428051602952" expanded="true" signature="6341:6420" placeholder="..." />
+                <marker date="1428051602952" expanded="true" signature="6610:8828" placeholder="..." />
+                <marker date="1428051602952" expanded="true" signature="6658:8813" placeholder="..." />
+                <marker date="1428051602952" expanded="true" signature="6702:8794" placeholder="..." />
+                <marker date="1428051602952" expanded="true" signature="6749:7010" placeholder="..." />
+                <marker date="1428051602952" expanded="true" signature="7055:8591" placeholder="..." />
+                <marker date="1428051602952" expanded="true" signature="7101:8564" placeholder="..." />
+                <marker date="1428051602952" expanded="true" signature="7217:7713" placeholder="..." />
+                <marker date="1428051602952" expanded="true" signature="7848:8533" placeholder="..." />
+                <marker date="1428051602952" expanded="true" signature="7941:8054" placeholder="..." />
+                <marker date="1428051602952" expanded="true" signature="8142:8255" placeholder="..." />
+                <marker date="1428051602952" expanded="true" signature="8346:8498" placeholder="..." />
+                <marker date="1428051602952" expanded="true" signature="8638:8771" placeholder="..." />
+                <marker date="1428051602952" expanded="true" signature="8927:8969" placeholder="..." />
+                <marker date="1428051602952" expanded="true" signature="9068:9240" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,21 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/Resources/node-server/emails/bbq - Copy (2)" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-10/parameters.yml" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entities/Handler/Email/Log.php" />
-        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-10/Log.php" />
-        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-10/Mailer.js" />
-        <option value="$PROJECT_DIR$/app/Resources/node-server/Mailer.js" />
-        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-10/app.php" />
-        <option value="$PROJECT_DIR$/web/media/vendor/bootstrap-sass/assets/stylesheets/_bootstrap.scss" />
-        <option value="$PROJECT_DIR$/web/media/sass/jquery-ui.min.scss" />
-        <option value="$PROJECT_DIR$/web/media/sass/jquery-ui.bootstrap.scss" />
-        <option value="$PROJECT_DIR$/web/media/sass/jquery-ui-1.10.0.custom.scss" />
-        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-12/tradologic-converter-proxy.php" />
-        <option value="$PROJECT_DIR$/src/SourceBundle/Base/HandlerGateway.php" />
-        <option value="$PROJECT_DIR$/src/SourceBundle/Base/Repository/Repository.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Command/CleanCommand.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entities/Handler/Email/History/Collect.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entities/Handler/Email/History/Create.php" />
@@ -86,16 +122,31 @@
         <option value="$PROJECT_DIR$/web/media/sass/_media-element.scss" />
         <option value="$PROJECT_DIR$/web/media/js/youtube.js" />
         <option value="$PROJECT_DIR$/web/sitemap.xml" />
-        <option value="$PROJECT_DIR$/web/media/bower.json" />
         <option value="$PROJECT_DIR$/web/media/sass/_introjs.scss" />
-        <option value="$PROJECT_DIR$/web/media/twig/layout.html.twig" />
         <option value="$USER_HOME$/Downloads/emails (1).sql" />
+        <option value="$PROJECT_DIR$/web/media/twig/20-minute-mail.html.twig" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-12/.htaccess" />
+        <option value="$PROJECT_DIR$/web/media/bower.json" />
+        <option value="$PROJECT_DIR$/web/media/theme/css/ui-lightness/jquery-ui-1.9.1.custom.css" />
+        <option value="$PROJECT_DIR$/web/media/sass/theme/_ui-theme.scss" />
+        <option value="$PROJECT_DIR$/web/media/sass/theme/_bootstrap.scss" />
+        <option value="$PROJECT_DIR$/web/media/sass/theme/_bootstrap-responsive.scss" />
+        <option value="C:/changes/dashboard-admin-1.1/theme/error.html" />
+        <option value="$PROJECT_DIR$/web/media/twig/sections/footer.html.twig" />
+        <option value="$PROJECT_DIR$/web/media/sass/theme/_fa.scss" />
+        <option value="$PROJECT_DIR$/web/media/sass/theme/_font-awsome.scss" />
+        <option value="$PROJECT_DIR$/web/media/twig/10-minute-mail.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/config_dev.yml" />
+        <option value="$PROJECT_DIR$/web/media/sass/theme/_application.scss" />
         <option value="$PROJECT_DIR$/web/media/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/web/media/js/main.js" />
+        <option value="$PROJECT_DIR$/web/media/twig/layout.html.twig" />
         <option value="$PROJECT_DIR$/web/media/sass/style.scss" />
+        <option value="$PROJECT_DIR$/web/media/js/main.js" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/web/media/twig/sections/header.html.twig" />
+        <option value="$PROJECT_DIR$/web/media/twig/faq.html.twig" />
         <option value="$PROJECT_DIR$/web/media/twig/index.html.twig" />
         <option value="$PROJECT_DIR$/web/media/twig/about.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
       </list>
     </option>
   </component>
@@ -106,14 +157,14 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -132,7 +183,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -161,6 +211,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="swiftmail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="swiftmail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="media" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="swiftmail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="swiftmail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="media" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="swiftmail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="swiftmail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -202,37 +306,12 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swiftmail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swiftmail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="API" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -247,14 +326,31 @@
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="LayoutCode.rearrangeEntriesSCSS" value="false" />
     <property name="LayoutCode.rearrangeEntriesTwig" value="false" />
+    <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="282" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="310" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="312" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="986" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="304" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="303" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="304" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="979" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\swiftmail\web\media\sass" />
       <recent name="C:\xampp\htdocs\swiftmail\web\media\twig" />
-      <recent name="C:\xampp\htdocs\swiftmail\web\media\image\media-element" />
-      <recent name="C:\xampp\htdocs\swiftmail\web\media\sass\vex" />
-      <recent name="C:\xampp\htdocs\swiftmail\src\AppBundle\Entities\Handler\Visitor" />
+      <recent name="C:\xampp\htdocs\swiftmail\web\media\js\swiftmail_app\quickuse" />
+      <recent name="C:\xampp\htdocs\swiftmail\web\media" />
+      <recent name="C:\xampp\htdocs\swiftmail\web\media\font" />
+      <recent name="C:\xampp\htdocs\swiftmail\web\media\fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\swiftmail\app\Resources\node-server\dev_mail_path" />
@@ -342,7 +438,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -400,53 +496,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/media/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="18" selection-start="1973" selection-end="1973" vertical-scroll-proportion="0.0" vertical-offset="709" max-vertical-offset="6153">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="24" selection-start="232" selection-end="237" vertical-scroll-proportion="-4.62" vertical-offset="0" max-vertical-offset="504" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/API/Email/HistoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1201" selection-end="1201" vertical-scroll-proportion="0.0" vertical-offset="945" max-vertical-offset="3255" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entities/Handler/Visitor/Clean.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="21" selection-start="361" selection-end="361" vertical-scroll-proportion="-1.4848485" vertical-offset="329" max-vertical-offset="1344" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entities/Model/Email.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="221" column="0" selection-start="3912" selection-end="4657" vertical-scroll-proportion="-1.7068965" vertical-offset="4437" max-vertical-offset="6069" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entities/Model/Email/History.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="161" column="22" selection-start="2892" selection-end="2892" vertical-scroll-proportion="-48.151516" vertical-offset="1792" max-vertical-offset="5208" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entities/Model/Visitor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="56" selection-start="867" selection-end="867" vertical-scroll-proportion="0.54330707" vertical-offset="63" max-vertical-offset="4935" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/API/EmailController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="23" selection-start="3926" selection-end="3961" vertical-scroll-proportion="-9.757576" vertical-offset="2513" max-vertical-offset="3402" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entities/Handler/Visitor/Register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="10" selection-start="1244" selection-end="1244" vertical-scroll-proportion="-16.121212" vertical-offset="476" max-vertical-offset="1365" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SourceBundle/Base/HandlerManager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="73" column="67" selection-start="1402" selection-end="1402" vertical-scroll-proportion="-9.30303" vertical-offset="1163" max-vertical-offset="2394" />
@@ -460,31 +509,6 @@
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/API/VisitorController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="147" column="39" selection-start="3895" selection-end="3895" vertical-scroll-proportion="-5.7272725" vertical-offset="2898" max-vertical-offset="4116" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/media/.bowerrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="922" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/media/vendor/vex/css/vex.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="8" selection-start="315" selection-end="315" vertical-scroll-proportion="0.5694143" vertical-offset="0" max-vertical-offset="5334" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/media/sass/vex/vex.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5334" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/media/vendor/vex/js/vex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="33" selection-start="5297" selection-end="5297" vertical-scroll-proportion="0.0066006603" vertical-offset="3144" max-vertical-offset="4179" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/media/vendor/vex/js/vex.combined.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="909" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
@@ -537,56 +561,6 @@
         <state line="80" column="18" selection-start="2303" selection-end="2303" vertical-scroll-proportion="0.7637795" vertical-offset="791" max-vertical-offset="1995" />
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/emails.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="42" selection-start="1448" selection-end="1448" vertical-scroll-proportion="-9.24" vertical-offset="504" max-vertical-offset="1407" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/media/vendor/google-code-prettify/src/prettify.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="34881" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/media/vendor/google-code-prettify/src/prettify.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="28" selection-start="0" selection-end="1570" vertical-scroll-proportion="0.5466378" vertical-offset="0" max-vertical-offset="1218" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/media/vendor/SyntaxHighlighter/demos/big_file.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="49" selection-start="1004" selection-end="1006" vertical-scroll-proportion="0.35433072" vertical-offset="126" max-vertical-offset="35973" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/media/vendor/SyntaxHighlighter/demos/server_side.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.18110237" vertical-offset="161" max-vertical-offset="1050" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/media/vendor/google-code-prettify/bin/prettify.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="12" selection-start="0" selection-end="675" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="126" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/media/vendor/SyntaxHighlighter/demos/autoloader.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.070866145" vertical-offset="63" max-vertical-offset="2352" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/media/vendor/mediaelement/build/mediaelementplayer.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="14" selection-start="0" selection-end="24088" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="20727" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/media/vendor/mediaelement/.bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="922" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/media/vendor/mediaelement/build/mediaelement-and-player.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="883" column="4" selection-start="24454" selection-end="24501" vertical-scroll-proportion="-98.28" vertical-offset="16086" max-vertical-offset="115374" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/sitemap.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="9" selection-start="543" selection-end="543" vertical-scroll-proportion="0.318872" vertical-offset="0" max-vertical-offset="922">
@@ -594,111 +568,130 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/media/sass/_media-element.scss">
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="51" selection-start="1674" selection-end="1674" vertical-scroll-proportion="0.28538814" vertical-offset="1976" max-vertical-offset="20706" />
+        <state line="174" column="60" selection-start="6108" selection-end="6108" vertical-scroll-proportion="0.39257592" vertical-offset="2864" max-vertical-offset="7287">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/media/vendor/intro.js/introjs.css">
+    <entry file="file://$PROJECT_DIR$/web/media/.bowerrc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="28" selection-start="0" selection-end="9274" vertical-scroll-proportion="0.5915493" vertical-offset="0" max-vertical-offset="7329" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="922" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/media/bower.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="11" selection-start="183" selection-end="183" vertical-scroll-proportion="0.18876405" vertical-offset="0" max-vertical-offset="890" />
+        <state line="1" column="20" selection-start="22" selection-end="22" vertical-scroll-proportion="0.023622047" vertical-offset="0" max-vertical-offset="889" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/media/vendor/intro.js/themes/introjs-nazanin.css">
+    <entry file="file://$PROJECT_DIR$/web/media/compiled/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="0" selection-end="5791" vertical-scroll-proportion="0.0" vertical-offset="155" max-vertical-offset="5691" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="922">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/emails (1).sql">
+    <entry file="file://C:/changes/dashboard-admin-1.1/theme/error.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1290" selection-end="24068" vertical-scroll-proportion="0.41511628" vertical-offset="567" max-vertical-offset="1470" />
+        <state line="210" column="0" selection-start="7724" selection-end="8981" vertical-scroll-proportion="-12.454545" vertical-offset="576" max-vertical-offset="1701" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/AppBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="113" selection-end="113" vertical-scroll-proportion="-5.7272725" vertical-offset="0" max-vertical-offset="315" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="18" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1134" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/media/Gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1412" selection-end="1412" vertical-scroll-proportion="0.0" vertical-offset="106" max-vertical-offset="1995">
+        <state line="37" column="21" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.0" vertical-offset="148" max-vertical-offset="1953" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/media/image/site-background.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/media/sass/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="16" selection-start="1132" selection-end="1132" vertical-scroll-proportion="-9.096386" vertical-offset="715" max-vertical-offset="1680">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/changes/dashboard-admin-1.1/theme/faq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="205" column="4" selection-start="6263" selection-end="14310" vertical-scroll-proportion="-7.969697" vertical-offset="4042" max-vertical-offset="5565">
+          <folding>
+            <element signature="tag#div#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="19" selection-start="775" selection-end="775" vertical-scroll-proportion="-8.909091" vertical-offset="0" max-vertical-offset="1848">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/media/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="2169" selection-end="2169" vertical-scroll-proportion="0.0" vertical-offset="1071" max-vertical-offset="6132">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/media/sass/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="18" selection-start="646" selection-end="663" vertical-scroll-proportion="-3.3614457" vertical-offset="456" max-vertical-offset="3612">
+        <state line="67" column="0" selection-start="2156" selection-end="2156" vertical-scroll-proportion="0.6610925" vertical-offset="814" max-vertical-offset="6447">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/media/twig/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="13" selection-start="3283" selection-end="3283" vertical-scroll-proportion="-41.363636" vertical-offset="0" max-vertical-offset="1659">
+        <state line="10" column="25" selection-start="699" selection-end="699" vertical-scroll-proportion="-5.7272725" vertical-offset="21" max-vertical-offset="1659">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/media/twig/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="35" selection-start="1300" selection-end="1300" vertical-scroll-proportion="-11.034483" vertical-offset="11" max-vertical-offset="4935">
+        <state line="12" column="0" selection-start="340" selection-end="633" vertical-scroll-proportion="-3.4310346" vertical-offset="53" max-vertical-offset="4515">
           <folding>
-            <element signature="e#571#624#0" expanded="true" />
-            <element signature="e#1134#1155#0" expanded="true" />
-            <element signature="e#4431#4452#0" expanded="true" />
-            <marker date="1425847394301" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425847394301" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425847394301" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425847394301" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425847394301" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425847394301" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425847394301" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425847394301" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425847394301" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425847394301" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425847394301" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425847394301" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425847394301" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425847394301" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425847394301" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425847394301" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425847394301" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425847394301" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1425847394301" expanded="true" signature="-1:-1" placeholder="..." />
+            <element signature="e#398#424#0" expanded="true" />
+            <element signature="e#3594#3615#0" expanded="true" />
+            <marker date="1428051602952" expanded="true" signature="5585:5815" placeholder="..." />
+            <marker date="1428051602952" expanded="true" signature="6008:6249" placeholder="..." />
+            <marker date="1428051602952" expanded="true" signature="6028:6204" placeholder="..." />
+            <marker date="1428051602952" expanded="true" signature="6045:6183" placeholder="..." />
+            <marker date="1428051602952" expanded="true" signature="6341:6420" placeholder="..." />
+            <marker date="1428051602952" expanded="true" signature="6610:8828" placeholder="..." />
+            <marker date="1428051602952" expanded="true" signature="6658:8813" placeholder="..." />
+            <marker date="1428051602952" expanded="true" signature="6702:8794" placeholder="..." />
+            <marker date="1428051602952" expanded="true" signature="6749:7010" placeholder="..." />
+            <marker date="1428051602952" expanded="true" signature="7055:8591" placeholder="..." />
+            <marker date="1428051602952" expanded="true" signature="7101:8564" placeholder="..." />
+            <marker date="1428051602952" expanded="true" signature="7217:7713" placeholder="..." />
+            <marker date="1428051602952" expanded="true" signature="7848:8533" placeholder="..." />
+            <marker date="1428051602952" expanded="true" signature="7941:8054" placeholder="..." />
+            <marker date="1428051602952" expanded="true" signature="8142:8255" placeholder="..." />
+            <marker date="1428051602952" expanded="true" signature="8346:8498" placeholder="..." />
+            <marker date="1428051602952" expanded="true" signature="8638:8771" placeholder="..." />
+            <marker date="1428051602952" expanded="true" signature="8927:8969" placeholder="..." />
+            <marker date="1428051602952" expanded="true" signature="9068:9240" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/media/twig/about.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="657" selection-end="657" vertical-scroll-proportion="0.3888889" vertical-offset="0" max-vertical-offset="2121">
+        <state line="20" column="14" selection-start="950" selection-end="950" vertical-scroll-proportion="0.47945204" vertical-offset="0" max-vertical-offset="2226">
           <folding>
             <element signature="e#370#423#0" expanded="true" />
-            <element signature="e#3580#3633#0" expanded="true" />
-            <element signature="e#4213#4234#0" expanded="true" />
+            <element signature="e#715#741#0" expanded="true" />
+            <element signature="e#3874#3927#0" expanded="true" />
+            <element signature="e#4507#4528#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/media/sass/_introjs.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="609" column="0" selection-start="14860" selection-end="14860" vertical-scroll-proportion="0.92575926" vertical-offset="11966" max-vertical-offset="12915">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="16" selection-start="588" selection-end="588" vertical-scroll-proportion="0.21259843" vertical-offset="0" max-vertical-offset="1911">
-          <folding />
         </state>
       </provider>
     </entry>
