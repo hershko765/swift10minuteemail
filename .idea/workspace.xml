@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77dbec62-c72e-4895-bb24-a3fb38a1a9b0" name="Default" comment="debug">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/media/twig/about.html.twig" afterPath="$PROJECT_DIR$/web/media/twig/about.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/media/js/build/about.min.js" afterPath="$PROJECT_DIR$/web/media/js/build/about.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/media/twig/index.html.twig" afterPath="$PROJECT_DIR$/web/media/twig/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/media/js/build/main.min.js" afterPath="$PROJECT_DIR$/web/media/js/build/main.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="splitterUI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="about.html.twig" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="about.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/media/twig/about.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="14" selection-start="950" selection-end="950" vertical-scroll-proportion="0.47945204" vertical-offset="0" max-vertical-offset="2226">
+            <state line="16" column="0" selection-start="657" selection-end="950" vertical-scroll-proportion="-10.181818" vertical-offset="0" max-vertical-offset="2226">
               <folding>
                 <element signature="e#370#423#0" expanded="true" />
                 <element signature="e#715#741#0" expanded="true" />
@@ -52,32 +48,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.twig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/media/twig/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="340" selection-end="633" vertical-scroll-proportion="-3.4310346" vertical-offset="53" max-vertical-offset="4515">
+            <state line="27" column="14" selection-start="1151" selection-end="1151" vertical-scroll-proportion="0.6039953" vertical-offset="53" max-vertical-offset="4746">
               <folding>
-                <element signature="e#398#424#0" expanded="true" />
-                <element signature="e#3594#3615#0" expanded="true" />
-                <marker date="1428051602952" expanded="true" signature="5585:5815" placeholder="..." />
-                <marker date="1428051602952" expanded="true" signature="6008:6249" placeholder="..." />
-                <marker date="1428051602952" expanded="true" signature="6028:6204" placeholder="..." />
-                <marker date="1428051602952" expanded="true" signature="6045:6183" placeholder="..." />
-                <marker date="1428051602952" expanded="true" signature="6341:6420" placeholder="..." />
-                <marker date="1428051602952" expanded="true" signature="6610:8828" placeholder="..." />
-                <marker date="1428051602952" expanded="true" signature="6658:8813" placeholder="..." />
-                <marker date="1428051602952" expanded="true" signature="6702:8794" placeholder="..." />
-                <marker date="1428051602952" expanded="true" signature="6749:7010" placeholder="..." />
-                <marker date="1428051602952" expanded="true" signature="7055:8591" placeholder="..." />
-                <marker date="1428051602952" expanded="true" signature="7101:8564" placeholder="..." />
-                <marker date="1428051602952" expanded="true" signature="7217:7713" placeholder="..." />
-                <marker date="1428051602952" expanded="true" signature="7848:8533" placeholder="..." />
-                <marker date="1428051602952" expanded="true" signature="7941:8054" placeholder="..." />
-                <marker date="1428051602952" expanded="true" signature="8142:8255" placeholder="..." />
-                <marker date="1428051602952" expanded="true" signature="8346:8498" placeholder="..." />
-                <marker date="1428051602952" expanded="true" signature="8638:8771" placeholder="..." />
-                <marker date="1428051602952" expanded="true" signature="8927:8969" placeholder="..." />
-                <marker date="1428051602952" expanded="true" signature="9068:9240" placeholder="..." />
+                <element signature="e#571#624#0" expanded="true" />
+                <element signature="e#916#942#0" expanded="true" />
+                <element signature="e#4112#4133#0" expanded="true" />
+                <marker date="1428051710405" expanded="true" signature="6103:6333" placeholder="..." />
+                <marker date="1428051710405" expanded="true" signature="6526:6767" placeholder="..." />
+                <marker date="1428051710405" expanded="true" signature="6546:6722" placeholder="..." />
+                <marker date="1428051710405" expanded="true" signature="6563:6701" placeholder="..." />
+                <marker date="1428051710405" expanded="true" signature="6859:6938" placeholder="..." />
+                <marker date="1428051710405" expanded="true" signature="7128:9346" placeholder="..." />
+                <marker date="1428051710405" expanded="true" signature="7176:9331" placeholder="..." />
+                <marker date="1428051710405" expanded="true" signature="7220:9312" placeholder="..." />
+                <marker date="1428051710405" expanded="true" signature="7267:7528" placeholder="..." />
+                <marker date="1428051710405" expanded="true" signature="7573:9109" placeholder="..." />
+                <marker date="1428051710405" expanded="true" signature="7619:9082" placeholder="..." />
+                <marker date="1428051710405" expanded="true" signature="7735:8231" placeholder="..." />
+                <marker date="1428051710405" expanded="true" signature="8366:9051" placeholder="..." />
+                <marker date="1428051710405" expanded="true" signature="8459:8572" placeholder="..." />
+                <marker date="1428051710405" expanded="true" signature="8660:8773" placeholder="..." />
+                <marker date="1428051710405" expanded="true" signature="8864:9016" placeholder="..." />
+                <marker date="1428051710405" expanded="true" signature="9156:9289" placeholder="..." />
+                <marker date="1428051710405" expanded="true" signature="9445:9487" placeholder="..." />
+                <marker date="1428051710405" expanded="true" signature="9586:9758" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -145,8 +142,8 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/web/media/twig/sections/header.html.twig" />
         <option value="$PROJECT_DIR$/web/media/twig/faq.html.twig" />
-        <option value="$PROJECT_DIR$/web/media/twig/index.html.twig" />
         <option value="$PROJECT_DIR$/web/media/twig/about.html.twig" />
+        <option value="$PROJECT_DIR$/web/media/twig/index.html.twig" />
       </list>
     </option>
   </component>
@@ -647,6 +644,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/media/twig/about.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="657" selection-end="950" vertical-scroll-proportion="-10.181818" vertical-offset="0" max-vertical-offset="2226">
+          <folding>
+            <element signature="e#370#423#0" expanded="true" />
+            <element signature="e#715#741#0" expanded="true" />
+            <element signature="e#3874#3927#0" expanded="true" />
+            <element signature="e#4507#4528#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/media/twig/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="25" selection-start="699" selection-end="699" vertical-scroll-proportion="-5.7272725" vertical-offset="21" max-vertical-offset="1659">
@@ -656,41 +665,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/media/twig/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="340" selection-end="633" vertical-scroll-proportion="-3.4310346" vertical-offset="53" max-vertical-offset="4515">
+        <state line="27" column="14" selection-start="1151" selection-end="1151" vertical-scroll-proportion="0.6039953" vertical-offset="53" max-vertical-offset="4746">
           <folding>
-            <element signature="e#398#424#0" expanded="true" />
-            <element signature="e#3594#3615#0" expanded="true" />
-            <marker date="1428051602952" expanded="true" signature="5585:5815" placeholder="..." />
-            <marker date="1428051602952" expanded="true" signature="6008:6249" placeholder="..." />
-            <marker date="1428051602952" expanded="true" signature="6028:6204" placeholder="..." />
-            <marker date="1428051602952" expanded="true" signature="6045:6183" placeholder="..." />
-            <marker date="1428051602952" expanded="true" signature="6341:6420" placeholder="..." />
-            <marker date="1428051602952" expanded="true" signature="6610:8828" placeholder="..." />
-            <marker date="1428051602952" expanded="true" signature="6658:8813" placeholder="..." />
-            <marker date="1428051602952" expanded="true" signature="6702:8794" placeholder="..." />
-            <marker date="1428051602952" expanded="true" signature="6749:7010" placeholder="..." />
-            <marker date="1428051602952" expanded="true" signature="7055:8591" placeholder="..." />
-            <marker date="1428051602952" expanded="true" signature="7101:8564" placeholder="..." />
-            <marker date="1428051602952" expanded="true" signature="7217:7713" placeholder="..." />
-            <marker date="1428051602952" expanded="true" signature="7848:8533" placeholder="..." />
-            <marker date="1428051602952" expanded="true" signature="7941:8054" placeholder="..." />
-            <marker date="1428051602952" expanded="true" signature="8142:8255" placeholder="..." />
-            <marker date="1428051602952" expanded="true" signature="8346:8498" placeholder="..." />
-            <marker date="1428051602952" expanded="true" signature="8638:8771" placeholder="..." />
-            <marker date="1428051602952" expanded="true" signature="8927:8969" placeholder="..." />
-            <marker date="1428051602952" expanded="true" signature="9068:9240" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/media/twig/about.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="14" selection-start="950" selection-end="950" vertical-scroll-proportion="0.47945204" vertical-offset="0" max-vertical-offset="2226">
-          <folding>
-            <element signature="e#370#423#0" expanded="true" />
-            <element signature="e#715#741#0" expanded="true" />
-            <element signature="e#3874#3927#0" expanded="true" />
-            <element signature="e#4507#4528#0" expanded="true" />
+            <element signature="e#571#624#0" expanded="true" />
+            <element signature="e#916#942#0" expanded="true" />
+            <element signature="e#4112#4133#0" expanded="true" />
+            <marker date="1428051710405" expanded="true" signature="6103:6333" placeholder="..." />
+            <marker date="1428051710405" expanded="true" signature="6526:6767" placeholder="..." />
+            <marker date="1428051710405" expanded="true" signature="6546:6722" placeholder="..." />
+            <marker date="1428051710405" expanded="true" signature="6563:6701" placeholder="..." />
+            <marker date="1428051710405" expanded="true" signature="6859:6938" placeholder="..." />
+            <marker date="1428051710405" expanded="true" signature="7128:9346" placeholder="..." />
+            <marker date="1428051710405" expanded="true" signature="7176:9331" placeholder="..." />
+            <marker date="1428051710405" expanded="true" signature="7220:9312" placeholder="..." />
+            <marker date="1428051710405" expanded="true" signature="7267:7528" placeholder="..." />
+            <marker date="1428051710405" expanded="true" signature="7573:9109" placeholder="..." />
+            <marker date="1428051710405" expanded="true" signature="7619:9082" placeholder="..." />
+            <marker date="1428051710405" expanded="true" signature="7735:8231" placeholder="..." />
+            <marker date="1428051710405" expanded="true" signature="8366:9051" placeholder="..." />
+            <marker date="1428051710405" expanded="true" signature="8459:8572" placeholder="..." />
+            <marker date="1428051710405" expanded="true" signature="8660:8773" placeholder="..." />
+            <marker date="1428051710405" expanded="true" signature="8864:9016" placeholder="..." />
+            <marker date="1428051710405" expanded="true" signature="9156:9289" placeholder="..." />
+            <marker date="1428051710405" expanded="true" signature="9445:9487" placeholder="..." />
+            <marker date="1428051710405" expanded="true" signature="9586:9758" placeholder="..." />
           </folding>
         </state>
       </provider>
