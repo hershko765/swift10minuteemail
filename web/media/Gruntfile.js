@@ -21,21 +21,19 @@ module.exports = function(grunt){
             my_target: {
                 files: {
                     'js/build/main.min.js': [
+                        'theme/js/libs/modernizr-2.5.3.min.js',
                         'vendor/jquery/dist/jquery.js',
+                        'theme/js/libs/jquery-ui-1.8.21.custom.min.js',
+                        'theme/js/libs/jquery.ui.touch-punch.min.js',
                         'vendor/underscore/underscore.js',
                         'vendor/backbone/backbone.js',
+                        'vendor/moment/moment.js',
                         'vendor/backbone.babysitter/libs/backbone.babysitter.js',
                         'vendor/backbone.wreqr/libs/backbone.wreqr.js',
                         'vendor/marionette/lib/backbone.marionette.js',
-                        'vendor/bootstrap-sass/assets/javascripts/bootstrap.js',
-                        'vendor/vex/js/vex.combined.min.js',
-                        'vendor/moment/moment.js',
+                        'theme/js/bootstrap.js',
+                        'theme/js/Theme.js',
                         'js/**/*.js',
-                        '!js/build/*'
-                    ],
-                    'js/build/about.min.js': [
-                        'vendor/jquery/dist/jquery.js',
-                        'vendor/bootstrap-sass/assets/javascripts/bootstrap.js',
                         '!js/build/*'
                     ]
                 }

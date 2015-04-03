@@ -1,56 +1,110 @@
 {% extends "layout.html.twig" %}
-    {% block preload_scripts %}
-    {% endblock %}
+{% block preload_scripts %}
+    <script>
+        var Server = {};
+        Server.Visitor = {{ visitor.asJSON() | raw }};
+        Server.streamerHost = 'http://swift10minutemail.com:8080';
+    </script>
+{% endblock %}
+
 {% block content %}
-    <!-- Fixed navbar -->
-    <!-- Begin page content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="jumbotron">
-                    <div class="page-header">
-                        <h1>Swift 10 Minute Email <small>Disposable Email account</small></h1>
-                    </div>
-                    <p class="lead">
-                        This free service will provide you with disposable email address for short time, you are able to receive
-                        email in your temporary email inbox (UNLIMITED), your able to read the email as you would in your real mailbox !
-                    </p>
-                    <div class="clearfix"></div>
+    <div id="content">
+        <div class="container">
+            <div class="row">
+                <div class="span12" style="text-align: center" >
+                    <a target="_blank" href="http://django576.628.a.clickbetter.com"><img src="http://insiderlegalbot.com/img/gb/22.jpg" border="0" alt="Legal Insider Bot"></a>
                 </div>
+                <div class="span12" style="margin-bottom: 40px;">
+                    <h1 class="page-header ">Swift 10 Minute Mail <small>Disposable Email Address Service</small></h1>
+                    <div class="row" style="margin-top: 0">
+                        <div class="span6">
+                            <p class="lead">
+                                This free service will provide you with disposable email address for short time, you are able to receive email in your temporary email inbox (UNLIMITED), your able to read the email as you would in your real mailbox !
+                            </p>
+                        </div>
+                        <div class="span6 key-features">
+                            <h3>Key Features</h3>
+                            <div class="faq-container">
+                                <ol class="faqList faq-list">
+                                    <li id="faq-10">
+                                        <div class="faq-icon">
+                                            <div class="faq-number">1</div>
+                                        </div>
+                                        <div class="faq-text">
+                                            <h4>Unlimited amount of emails</h4>
+                                        </div>
+                                    </li>
+                                    <li id="faq-10">
+                                        <div class="faq-icon">
+                                            <div class="faq-number">2</div>
+                                        </div>
+                                        <div class="faq-text">
+                                            <h4>Simple and easy UI</h4>
+                                        </div>
+                                    </li>
+                                    <li id="faq-10">
+                                        <div class="faq-icon">
+                                            <div class="faq-number">3</div>
+                                        </div>
+                                        <div class="faq-text">
+                                            <h4>Fastest disposable email inbox</h4>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.error-container -->
+                </div>
+                <div class="clearfix"></div>
+                <div class="span8">
+                    <h3 class="title">Quick Usage</h3>
+                    <p>Your Email</p> <h4 class="email-box active-email">{{ visitor.getEmail() }}@swift10minutemail.com</h4>
+                    <div class="email-timer">
+                        <h4>Your Swift Mail will be deleted in <strong><span id="time-minutes"></span> Minutes</strong></h4>
+                        <div class="progress progress-primary progress-striped active">
+                            <div id="visitor-time-progress" class="bar" style="width: 25%"></div> <!-- /.bar -->
+                        </div>
+                    </div>
+                    <div class="action-buttons pull-right">
+                        <button class="btn btn-secondary" id="add_time">Give me more time </button>
+                        <button class="btn btn-secondary" id="change-address">Change Address </button>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="table-container">
+                       <div id="swift-table-region"></div>
+                    </div>
+                </div>
+                <div class="span4">
+                    <h3 class="title">Advertise</h3>
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- about page - responsive -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-4232269688571296"
+                         data-ad-slot="3934176561"
+                         data-ad-format="auto"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                <!-- /.span12 -->
             </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="col-md-12">
-            <h3 class="page-header">Our Services..</h3>
-        </div>
-        <div class="col-md-4">
-            <div class="product-box">
-                <h3 class="page-header">Swift 10 Minute Email</h3>
-                <p>
-                    Swift send is service which allow you to use your disposable email and also send emails trough it! this service is 100% free and allow you to send unlimited amount of emails            </p>
-                <button type="button" class="btn btn-danger btn-lg">Use SwiftMail FREE</button>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="product-box">
-                <h3 class="page-header">SwiftSend</h3>
-                <p>
-                    Swift send is service which allow you to use your disposable email and also send emails trough it! this service is 100% free and allow you to send unlimited amount of emails
-                </p>
-                <button type="button" class="btn btn-danger btn-lg">Use SwiftSend FREE</button>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="product-box">
-                <h3 class="page-header">SwiftInbox</h3>
-                <p>
-                    Swift send is service which allow you to use your disposable email and also send emails trough it! this service is 100% free and allow you to send unlimited amount of emails
-                </p>
-                <button type="button" class="btn btn-danger btn-lg">Use SwiftInbox FREE</button>
-            </div>
-        </div>
-    </div>
+            <!-- /.row -->
 
-
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /#content -->
+{% endblock %}
+{% block header %}
+    {% embed  "sections/header.html.twig" %}
+        {% block header_subsection %}
+            <div id="masthead" style="padding: 5px;">
+                <div class="container">
+                </div>
+                <!-- /.container -->
+            </div>
+        {% endblock %}
+    {% endembed  %}
 {% endblock %}

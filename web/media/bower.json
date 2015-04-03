@@ -1,16 +1,11 @@
 {
-  "name": "Boa Forms",
+  "name": "SwiftMail",
   "dependencies": {
     "jquery": null,
-    "bootstrap-sass": null,
     "underscore": null,
     "jquery-validation": null,
     "moment": "~2.9.0",
     "marionette": "~2.3.2",
-    "font-awsome": "~4.3.0",
-    "vex": "~2.3.2",
-    "google-code-prettify": "~1.0.4",
-    "mediaelement": "~2.16.4",
-    "intro.js": "~1.0.0"
+    "font-awsome": "~4.3.0"
   }
 }

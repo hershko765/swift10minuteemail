@@ -36,6 +36,7 @@
         template: "#email-headers"
     });
 
+
     swiftApp.Views.ModalView = Backbone.Marionette.LayoutView.extend({
         template: "#modal-view",
         regions: {
@@ -47,22 +48,37 @@
             var layoutView = this;
             this.modalContentRegion.on('show', function(view, region){
 
+                var $emailContent = view.$el.find('.email-content').clone();
+                view.$el.find('.email-content').remove();
+
+                $iframe = $('<iframe></iframe>').css({
+                    border: 'none',
+                    width: '100%'
+                });
+
+                view.$el.append($iframe);
+
+                $iframe.ready(function(){
+                    $iframe[0].contentWindow.document.open();
+                    $iframe[0].contentWindow.document.write($emailContent[0].outerHTML);
+                    $iframe[0].contentWindow.document.close();
+
+                    setTimeout(function(){
+                        $iframe.css('height', $($iframe[0].contentWindow.document).height() + 100);
+                    }, 300)
+                });
+
                 var $modal = layoutView.$el.find('#modal-layout-view');
-                $modal.modal('show');
+                $modal.on('show', function(){
+                    $('body').css('overflow', 'hidden')
+                });
 
-                $modal.on('hide.bs.modal', function(){
+                $modal.on('hidden', function(){
                     region.reset();
+                    $('body').css('overflow', 'auto')
                 });
 
-                layoutView.$el.find('#modal-layout-view').on('shown.bs.tab', function(){
-                    var height = $(this).find('.modal-body').height() + 200;
-                    if ($(document).height() > height) {
-                        $(this).find('.modal-backdrop').css('height', '100%');
-                    }
-                    else {
-                        $(this).find('.modal-backdrop').css('height', (height) + 'px');
-                    }
-                });
+                $modal.modal('show');
 
             });
         }
@@ -198,7 +214,6 @@
         var emailHeadersView = new swiftApp.Views.EmailHeadersView({
             model: emailModel
         });
-
 
         modalView.modalContentRegion.show(emailContentView);
         modalView.modalHeadersRegion.show(emailHeadersView);

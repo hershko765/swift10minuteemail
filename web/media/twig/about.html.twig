@@ -1,96 +1,43 @@
 {% extends "layout.html.twig" %}
+{% block preload_scripts %}
+    <script>
+        var Server = {};
+        Server.Visitor = {{ visitor.asJSON() | raw }};
+        Server.streamerHost = 'http://swift10minutemail.com:8080';
+    </script>
+{% endblock %}
+
 {% block content %}
-    <!-- Fixed navbar -->
-    <!-- Begin page content -->
+<div id="content">
     <div class="container">
-        <div class="right-ad-container">
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- side ad - right -->
-            <ins class="adsbygoogle"
-                 style="display:inline-block;width:160px;height:600px"
-                 data-ad-client="ca-pub-4232269688571296"
-                 data-ad-slot="6748042168"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+        <div class="span12" style="text-align: center" >
+            <a target="_blank" href="http://django576.628.a.clickbetter.com"><img src="http://insiderlegalbot.com/img/gb/22.jpg" border="0" alt="Legal Insider Bot"></a>
         </div>
         <div class="row">
-            <div class="col-md-12">
-                <div class="page-header">
-                    <h1>Swift 10 Minute Email <small>Disposable Email Service</small></h1>
+            <div class="span12" style="margin-bottom: 40px;">
+                <h1 class="page-header ">Swift 10 Minute Mail <small>Disposable Email Address Service</small></h1>
+                <div class="row" style="margin-top: 0">
+                    <div class="span12">
+                        <p class="lead">
+                            swift 10 minute mail is a free disposable email service. Your temporary e-mail address will expire after 10 minutes, you can extend it by pressing the "Give Me More Time" button, this button will be disabled once you click it, it will become active again after 8 minutes and you will be able to extend it again unlimited time.
+                        </p>
+                        <p class="lead">
+                            if you wish, you can always replace your 10 minute email address by pressing the "Change Address" button.
+                            this feature will allow you to switch emails every time you want fresh disposable email address
+                        </p>
+                        <p class="lead">
+                            once your time is out, the email is deleted and you wont receive emails anymore, if you forgot to extend your email before the time was running out, you can always get new email and press the "Custom Address" button which will allow you to create new custom email address!
+                            (as long as the email you type is not blacklisted or used)
+                        </p>
+                        <p>
+                            <a href="/" class="lead pull-right">Start Here</a>
+                        </p>
+                    </div>
                 </div>
-                <p>
-                    swift 10 minute mail is a free disposable email service.
-                    Your temporary e-mail address will expire after 10 minutes,
-                    you can extend it by pressing the "Give Me More Time" button, this button will be disabled once you click it, it
-                    will become active again after 8 minutes and you will be able to extend it again unlimited time.
-                </p>
-                <p>
-                    if you wish, you can always replace your 10 minute email address by pressing
-                    the "Change Address" button. <br/>
-                    this feature will allow you to switch emails every time you want fresh disposable email address
-                </p>
-                <p>
-                    once your time is out, the email is deleted and you wont receive emails anymore, if you forgot to extend
-                    your email before the time was running out, you can always get new email and press the "Custom Address"
-                    button which will allow you to create new custom email address! <br/>
-                    (as long as the email you type is not blacklisted or used)
-                </p>
-            </div>
-            <div class="clearfix"></div>
-            <br/><br/><br/>
-            <div class="col-md-8">
-                <h2>F.A.Q</h2>
-                <hr/>
-                <h4><strong>Does my disposable email is real address?</strong></h4>
-                <p>
-                    Yes. all the emaill addresses we give freely is REAL
-                    and your able to receive mail.
-                </p>
-                <hr/>
-                <h4><strong>It just 10 minutes?</strong></h4>
-                <p>
-                    No, you can always extend it by 10 minutes! once you extend
-                    you wont be able to extend for 8 minutes, your able to keep your email address
-                    as long as your active
-                </p>
-                <hr/>
-                <h4><strong>How fast does my email will arrive?</strong></h4>
-                <p>
-                    We use top technologies to make sure that email will arrive in no time,
-                    were the fastest disposable email service and we will make sure you email
-                    wont delay in the way!
-                </p>
-            </div>
-            <div class="col-md-4">
-                <div class="ad-box-400 about-ad-box-1 hidden-sm hidden-xs">
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- about page -->
-                    <ins class="adsbygoogle"
-                         style="display:inline-block;width:336px;height:280px"
-                         data-ad-client="ca-pub-4232269688571296"
-                         data-ad-slot="2143045763"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-                <div class="ad-box-responsive hidden-lg hidden-md">
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- about page - responsive -->
-                    <ins class="adsbygoogle"
-                         style="display:block"
-                         data-ad-client="ca-pub-4232269688571296"
-                         data-ad-slot="3934176561"
-                         data-ad-format="auto"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
+                <!-- /.error-container -->
             </div>
         </div>
+    <!-- /.container -->
     </div>
+</div>
 {% endblock %}
-{% block scripts %}
-    <script src="/media/js/build/about.min.js"></script>
-{% endblock %}
-{% block templates %}{% endblock %}

@@ -1,188 +1,74 @@
-// # Imports
-@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/variables";
-@import "variables";
+@import "theme/font-awsome";
+@import "theme/bootstrap";
+@import "theme/bootstrap-responsive";
+@import "theme/application";
+@import "theme/ui-theme";
 
-@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap";
-@import "../vendor/font-awsome/scss/font-awesome";
-
-@import "vex/vex";
-@import "vex/vex-theme-os";
-
-// Sticky footer
-@import "footer";
-
-// Yeti Template
-@import "yeti";
-
-
-body {
-
-  max-width: 100% !important;
-}
-// Custom
-.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
-  font-size: 16px;
+* {
+  box-sizing: border-box;
 }
 
-.ad-box-400 {
-  height: 400px;
-  margin-bottom: 50px;
-
-  &.about-ad-box-1 {
-    margin-top: 74px;
-  }
-};
-
-.product-box {
-  float: left;
-  width: 100%;
-  background: #FAFAFA;
+#homepage-header {
+  margin-top: 2em;
+  margin-bottom: 3em;
   text-align: center;
-  box-shadow: 0 0 2px 1px #CCD;
-  padding: 0 32px 19px 33px;
-  margin-top: 28px;
-  margin-bottom: 30px;
-
-  .btn {
-
-  }
-
-  .page-header {
-    margin: 0;
-    line-height: 63px;
-    padding: 0;
-    margin-bottom: 13px;
-  }
+}
+#homepage-header h1 {
+  margin-bottom: .65em;
+  font-size: 40px;
+  font-weight: 600;
+}
+#homepage-header h2 {
+  color: #777;
+  font-size: 24px;
+  font-weight: 400;
 }
 
-.ad-box-responsive {
-  height: auto;
-  margin: 45px 0;
+h4.email-box {
+  background: #eee;
+  padding: 7px 27px;
+  text-align: center;
+  margin-bottom: 24px;
 }
 
-.table {
-  background: #fff;
+#swift-table-region {
+  margin-top: 7px;
 }
 
-.site-background {
-  background: url(../image/site-background.jpg) 0 0/100% no-repeat;
+#header > .container {
+  background-image: url(http://localhost:8000/media/image/logo.png);
+  background-repeat: no-repeat;
+}
+
+.lead {
+  font-size: 17px;
+}
+
+.btn-large.btn-secondary.get-started-btn {
+  width: 76%;
+  font-size: 22px;
+  text-align: center;
+  float: none;
+  margin: 67px auto 0 auto;
+  max-width: 288px;
+  display: block;
+}
+
+.key-features {
+  padding-left: 64px;
+}
+
+.faq-container .faq-list li .faq-number {
+  line-height: 27px;
+}
+
+.modal {
+  max-width: 770px;
   width: 100%;
-  height: 400px;
-  position: absolute;
-  z-index: -1;
-  opacity: .3 ;
-  border-bottom: 3px solid rgb(0, 63, 84);
-  box-shadow: 0 0 10px 2px;
-  outline: 2px solid #333;
-}
+  margin-left: -410px;
 
-.main-action-buttons {
-}
-
-.jumbotron h1{
-  font-size: 43.5px;
-}
-
-.jumbotron {
-  margin-bottom: 0;
-  margin-top: 19px;
-}
-
-body>.container {
-  padding-top: 0;
-  position: relative;
-}
-
-.email-content {
-  word-wrap: break-word;
-}
-
-.read-email-btn {
-  cursor: pointer;
-}
-
-.right-ad-container {
-  position: absolute;
-  margin-right: -162px;
-  right: 0;
-};
-
-.left-ad-container {
-  position: absolute;
-  margin-left: -162px;
-  left: 0;
-};
-
-
-@media (max-width: $screen-md) {
-
-  .jumbotron h1{
-    text-align: center;
-
-    small { display: block }
-  }
-
-  .main-action-buttons {
-    text-align: center;
-  }
-
-  .page-header h2 {
-    text-align: center;
-  }
-
-  .btn-group {
-    margin: auto;
-    overflow: auto;
-    width: 268px;
-    padding: 10px;
-
-    a {
-      width: 100%;
-      padding: 18px;
-    }
-  }
-
-  .container {
-    width: 100%;
-  }
-}
-
-@media (max-width: $screen-sm) {
-  .page-header h2 {
-    font-size: 25px;
-  }
-}
-
-@media (max-width: 1530px) {
-    .right-ad-container { display: none };
-    .left-ad-container { display: none };
-}
-
-@media (max-width: 512px) {
-
-  .jumbotron h1{
-    font-size: 31px;
-  }
-
-
-  .page-header h2 {
-    font-size: 18px;
-  }
-
-  h1 {
-    font-size: 28px;
-  }
-
-  .jumbotron p {
-    font-size: 19px;
-  }
-
-  h3 {
-    font-size: 16px;
-  }
-
-  .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
-    font-size: 12px;
+  .modal-header h4 {
+    color: #fff;
   }
 }
 

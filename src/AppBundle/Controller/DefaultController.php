@@ -17,19 +17,11 @@ class DefaultController extends Controller
 {
 
     /**
-     * @Route("/", name="homepage")
-     * @Template("index.html.twig")
-     */
-    public function indexAction(Request $request)
-    {
-        return [
-            'page' => 'home'
-        ];
-    }
-
-    /**
      * @Route("/10-minute-mail", name="10-minute-mail")
      * @Route("/20-minute-mail", name="20-minute-mail")
+     * @Route("/", name="index")
+     * @Route("/about", name="about")
+     * @Route("/faq", name="faq")
      */
     public function swiftMailAction(Request $request)
     {
@@ -88,7 +80,7 @@ class DefaultController extends Controller
         }
 
         $data = [
-            'page' => 'home',
+            'page' => $route_name,
             'visitor' => $visitor,
             'status' => $status
         ];
@@ -96,14 +88,4 @@ class DefaultController extends Controller
         return $this->render($route_name.'.html.twig', $data, new Response());
     }
 
-    /**
-     * @Route("/about", name="about")
-     * @Template("about.html.twig")
-     */
-    public function aboutAction()
-    {
-        return [
-            'page' => 'about'
-        ];
-    }
 }

@@ -1,0 +1,78 @@
+<div id="topbar">
+
+    <div class="container">
+
+        <a href="javascript:;" id="menu-trigger"   data-target="#">
+            <i class="icon-cog"></i>
+        </a>
+
+        <div id="top-nav">
+
+            <ul class="pull-right">
+                <li><a href="javascript:;">20 Minute Email</a></li>
+                <li><a href="javascript:;">10 Minute Email</a></li>
+            </ul>
+        </div>
+        <!-- /#top-nav -->
+
+    </div>
+    <!-- /.container -->
+
+</div>
+<!-- /#topbar -->
+
+
+<div id="header">
+    <div class="container">
+        <a href="/" class="brand">Homepage</a>
+        <a href="javascript:;" class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <i class="icon-reorder"></i>
+        </a>
+        <div class="nav-collapse">
+            <ul id="main-nav" class="nav pull-right">
+                <li class="nav-icon {% if page == "index" %} active {% endif %}">
+                    <a href="/">
+                        <i class="icon-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li class="{% if page == "about" %} active {% endif %}">
+                    <a href="/about"  >
+                        <i class="icon-external-link"></i>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="{% if page == "faq" %} active {% endif %}">
+                    <a href="/faq"  >
+                        <i class="icon-external-link"></i>
+                        <span>F.A.Q</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <!-- /.nav-collapse -->
+
+    </div>
+    <!-- /.container -->
+
+</div>
+<!-- /#header -->
+
+{% block header_subsection %}
+    <div id="masthead">
+        <div class="container">
+            <div class="masthead-pad">
+                <div class="masthead-text">
+                    <h2>Swift 10 Minute Mail</h2>
+
+                    <p>Homepage</p>
+                </div>
+                <!-- /.masthead-text -->
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+{% endblock %}
+<!-- /#masthead -->
