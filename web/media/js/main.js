@@ -47,6 +47,7 @@
             var layoutView = this;
             this.modalContentRegion.on('show', function(view, region){
 
+
                 var $modal = layoutView.$el.find('#modal-layout-view');
                 $modal.modal('show');
 
