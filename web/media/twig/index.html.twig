@@ -31,11 +31,12 @@
         <a href='http://google.com/' data-intro='Hello step one!'></a>
         <div class="jumbotron">
             <div class="page-header">
-                <h1>Swift 10 Minute Email <small>Disposable Email account</small></h1>
+                <h1>{% trans %}Swift 10 Minute Email{% endtrans %}<small> {% trans %}Disposable Email account{% endtrans %}</small></h1>
             </div>
             <p class="lead">
-                This free service will provide you with disposable email address for short time, you are able to receive
-                email in your temporary email inbox (UNLIMITED), your able to read the email as you would in your real mailbox !
+                {% trans %}
+                This Free Service
+                {% endtrans %}
             </p>
             <div class="clearfix"></div>
         </div>
@@ -60,23 +61,24 @@
                     <div class="col-xs-12 main-action-buttons">
                         <div class="btn-group">
                             <a href="" class="btn btn-primary" id="add_time">
-                                Give me more time</a>
+                                {% trans %}Give me more time{% endtrans %}</a>
                         </div>
                         <div class="btn-group">
                             <a href="" class="btn btn-primary" id="change-address">
-                                Change Address</a>
+                                {% trans %}Change Address{% endtrans %}</a>
                         </div>
                         <div class="btn-group">
                             <a href="" class="btn btn-danger" id="custom-address">
-                                Custom Address</a>
+                                {% trans %}Custom Address{% endtrans %}</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="clearfix"></div>
             <div class="col-md-12">
-                <h3>Your Swift Mail will be deleted in <strong><span id="time-minutes"></span> Minutes</strong></h3>
-
+                {% trans %}
+                Your Swift Mail Will be deleted
+                {% endtrans %}
                 <div class="progress progress-striped">
                     <div class="progress-bar progress-bar-success" id="visitor-time-progress"></div>
                 </div>
@@ -109,13 +111,13 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Email Content</h4>
+                    <h4 class="modal-title" id="myModalLabel">{% trans %}Email Content{% endtrans %}</h4>
                 </div>
                 <div class="modal-body">
                     <div id="modal-content-region"></div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">{% trans %}Close{% endtrans %}</button>
                 </div>
             </div>
         </div>
@@ -125,13 +127,13 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Learn How To Use Your 10 Minute Mail</h4>
+                    <h4 class="modal-title" id="myModalLabel">{% trans %}Learn How To Use Your 10 Minute Mail{% endtrans %}</h4>
                 </div>
                 <div class="modal-body">
                     <div id="player"></div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">{% trans %}Close{% endtrans %}</button>
                 </div>
             </div>
         </div>
@@ -155,9 +157,9 @@
             <thead>
             <tr>
                 <th>#</th>
-                <th>From</th>
-                <th>Subject</th>
-                <th>Date</th>
+                <th>{% trans %}From{% endtrans %}</th>
+                <th>{% trans %}Subject{% endtrans %}</th>
+                <th>{% trans %}Date{% endtrans %}</th>
             </tr>
             </thead>
             <tbody></tbody>
@@ -165,7 +167,7 @@
     </script>
     <script type="text/html" id="swift-table-empty">
         <td colspan="6">
-            <h4 class="text-center">Your mail box is empty!</h4>
+            <h4 class="text-center">{% trans %}Your mail box is empty!{% endtrans %}</h4>
         </td>
     </script>
     <script type="text/html" id="modal-view">
@@ -175,16 +177,16 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Email Content</h4>
+                        <h4 class="modal-title" id="myModalLabel">{% trans %}Email Content{% endtrans %}</h4>
                     </div>
                     <div class="modal-body">
                         <div role="tabpanel">
 
                             <!-- Nav tabs -->
                             <ul class="nav nav-tabs" role="tablist">
-                                <li role="presentation" class="active"><a href="#tab-email" aria-controls="home" role="tab" data-toggle="tab">Email</a></li>
-                                <li role="presentation"><a href="#tab-headers" aria-controls="profile" role="tab" data-toggle="tab">Headers</a></li>
-                                <li role="presentation"><a href="#tab-spam-score" aria-controls="messages" role="tab" data-toggle="tab">Spam Score</a></li>
+                                <li role="presentation" class="active"><a href="#tab-email" aria-controls="home" role="tab" data-toggle="tab">{% trans %}Email{% endtrans %}</a></li>
+                                <li role="presentation"><a href="#tab-headers" aria-controls="profile" role="tab" data-toggle="tab">{% trans %}Headers{% endtrans %}</a></li>
+                                <li role="presentation"><a href="#tab-spam-score" aria-controls="messages" role="tab" data-toggle="tab">{% trans %}Spam Score{% endtrans %}</a></li>
                             </ul>
                             <hr/>
                             <!-- Tab panes -->
@@ -196,13 +198,13 @@
                                     <div id="modal-headers-region"></div>
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="tab-spam-score">
-                                    <div id="spam-score-region"><h4 class="text-center">Coming Soon !</h4></div>
+                                    <div id="spam-score-region"><h4 class="text-center">{% trans %}Coming Soon !{% endtrans %}</h4></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">{% trans %}Close{% endtrans %}</button>
                     </div>
                 </div>
             </div>

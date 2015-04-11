@@ -16,10 +16,12 @@ use AppBundle\Entities\Model\Visitor;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/", name="homepage")
+     * @Route("/{lang}", name="homepage", requirements={
+     *     "lang": "[\w]{2}"
+     * })
      * @Template("index.html.twig")
      */
-    public function indexAction(Request $request)
+    public function indexAction(Request $request, $lang = 'en')
     {
         $cookies = $request->cookies->all();
         $visitor = NULL;
@@ -74,21 +76,28 @@ class DefaultController extends Controller
             $response->sendHeaders();
         }
 
+	    $this->get('translator')->setLocale($lang);
+
         return [
             'page' => 'home',
+	        'lang' => $lang,
             'visitor' => $visitor,
             'status' => $status
         ];
     }
 
     /**
-     * @Route("/about", name="about")
+     * @Route("/{lang}/about", name="about")
+     * @Route("/about", name="about_english")
      * @Template("about.html.twig")
      */
-    public function aboutAction()
+    public function aboutAction($lang = "en")
     {
-        return [
-            'page' => 'about'
+	    $this->get('translator')->setLocale($lang);
+
+	    return [
+            'page' => 'about',
+		    'lang' => $lang
         ];
     }
 }

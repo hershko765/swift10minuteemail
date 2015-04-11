@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="keywords" content="temporary email address, disposable email, disposable mail, 10 minute mail">
-    <meta name="description" content="swift 10 minute mail is disposable email service you can use to register to websites or use your temporary email address and prevent your real mail to become junkyard">
+    <meta name="keywords" content="{% trans %}Homepage Meta - Keywords{% endtrans %}">
+    <meta name="description" content="{% trans %}Homepage Meta - Description{% endtrans %}">
     <meta name="msvalidate.01" content="DA4E38FB50F37F86F30AE446288CCAB8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Swift 10 Minute Mail - Free Disposable Email Account</title>
+    <title>{% trans %}Swift 10 Minute Mail - Free Disposable Email Account{% endtrans %}</title>
     <link rel="stylesheet" href="/media/compiled/style.min.css"/>
+    {#<link rel="alternate" href="http://swift10minutemail.com" hreflang="de" />#}
     {% block preload_scripts %}
     {% endblock %}
     <script>
@@ -30,24 +31,26 @@
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
+                    <span class="sr-only">{% trans %}Toggle navigation{% endtrans %}</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Swift 10 Minute Mail</a>
+                <a class="navbar-brand" href="#">{% trans %}Swift 10 Minute Mail{% endtrans %}</a>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li {% if page == 'home' %}class="active"{% endif %}><a href="/">Home</a></li>
-                    <li {% if page == 'about' %}class="active"{% endif %} ><a href="/about">About</a></li>
+                    <li {% if page == 'home' %}class="active"{% endif %}><a href="{% if lang != "en" %}/{{ lang }}{% else %}/{% endif %}">{% trans %}Home{% endtrans %}</a></li>
+                    <li {% if page == 'about' %}class="active"{% endif %} ><a href="{% if lang != "en" %}/{{ lang }}/about{% else %}/about{% endif %}">{% trans %}About{% endtrans %}</a></li>
+                </ul>
+                <ul class="nav navbar-nav pull-right">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tools <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{% trans %}Language{% endtrans %} <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Swift 10 Minute Mail</a></li>
-                            <li><a href="#">Color Picker</a></li>
+                            <li><a href="/">{% trans %}English{% endtrans %}</a></li>
+                            <li><a href="/de">{% trans %}German{% endtrans %}</a></li>
                             <li class="divider"></li>
-                            <li class="dropdown-header">Advisers</li>
+                            <li class="dropdown-header">{% trans %}Advisers{% endtrans %}</li>
                             <li><a href="#">Ads</a></li>
                             <li><a href="#">Ads</a></li>
                         </ul>
@@ -61,7 +64,7 @@
 {% block footer %}
     <footer class="footer">
         <div class="container">
-            <p class="text-muted">Swift 10 Minute Mail - Disposable Email Service, All Rights Reserved </p>
+            <p class="text-muted">{% trans %}Swift 10 Minute Mail - Disposable Email Service, All Rights Reserved {% endtrans %}</p>
         </div>
     </footer>
 {% endblock %}
