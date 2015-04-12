@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="about.html.twig" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="about.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/media/twig/about.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="25" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.61417323" vertical-offset="0" max-vertical-offset="2079">
+            <state line="28" column="14" selection-start="1273" selection-end="1273" vertical-scroll-proportion="-17.818182" vertical-offset="0" max-vertical-offset="2079">
               <folding>
                 <element signature="e#949#1001#0" expanded="true" />
               </folding>
@@ -76,10 +76,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DefaultController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="100" selection-start="766" selection-end="766" vertical-scroll-proportion="29.69697" vertical-offset="1379" max-vertical-offset="2268">
+            <state line="19" column="70" selection-start="736" selection-end="736" vertical-scroll-proportion="0.4488189" vertical-offset="0" max-vertical-offset="2268">
               <folding>
                 <element signature="e#40#88#0" expanded="true" />
               </folding>
@@ -167,10 +167,10 @@
         <option value="$PROJECT_DIR$/app/Resources/translations/messages.en.yml" />
         <option value="$PROJECT_DIR$/app/Resources/translations/messages.de.yml" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/web/media/twig/layout.html.twig" />
         <option value="$PROJECT_DIR$/web/media/twig/index.html.twig" />
         <option value="$PROJECT_DIR$/web/media/twig/about.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
       </list>
     </option>
   </component>
@@ -833,15 +833,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="100" selection-start="766" selection-end="766" vertical-scroll-proportion="29.69697" vertical-offset="1379" max-vertical-offset="2268">
-          <folding>
-            <element signature="e#40#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/media/twig/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="18" selection-start="1298" selection-end="1298" vertical-scroll-proportion="-5.090909" vertical-offset="441" max-vertical-offset="1743">
@@ -882,9 +873,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/media/twig/about.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="25" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.61417323" vertical-offset="0" max-vertical-offset="2079">
+        <state line="28" column="14" selection-start="1273" selection-end="1273" vertical-scroll-proportion="-17.818182" vertical-offset="0" max-vertical-offset="2079">
           <folding>
             <element signature="e#949#1001#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="70" selection-start="736" selection-end="736" vertical-scroll-proportion="0.4488189" vertical-offset="0" max-vertical-offset="2268">
+          <folding>
+            <element signature="e#40#88#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -16,8 +16,8 @@ use AppBundle\Entities\Model\Visitor;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/", name="homepage", host="swift10minutemail.local", defaults={"lang" = "en"})
-     * @Route("/", name="homepage_de", host="{lang}.swift10minutemail.local", defaults={"lang" = "en"})
+     * @Route("/", name="homepage", host="swift10minutemail.{ext}", defaults={"lang" = "en"})
+     * @Route("/", name="homepage_de", host="{lang}.swift10minutemail.{ext}", defaults={"lang" = "en"})
      *
      * @Template("index.html.twig")
      */
@@ -87,8 +87,8 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/about", name="about", host="swift10minutemail.local", defaults={"lang" = "en"})
-     * @Route("/about", name="about_de", host="{lang}.swift10minutemail.local", defaults={"lang" = "en"})
+     * @Route("/about", name="about", host="swift10minutemail.{ext}", defaults={"lang" = "en"})
+     * @Route("/about", name="about_de", host="{lang}.swift10minutemail.{ext}", defaults={"lang" = "en"})
      * @Template("about.html.twig")
      */
     public function aboutAction(Request $request, $lang)
