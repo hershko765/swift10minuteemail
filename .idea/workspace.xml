@@ -26,10 +26,28 @@
       <file leaf-file-name="about.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/media/twig/about.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="14" selection-start="1273" selection-end="1273" vertical-scroll-proportion="-17.818182" vertical-offset="0" max-vertical-offset="2079">
+            <state line="3" column="69" selection-start="209" selection-end="209" vertical-scroll-proportion="-1.9090909" vertical-offset="0" max-vertical-offset="2184">
               <folding>
-                <element signature="e#949#1001#0" expanded="true" />
+                <element signature="e#1160#1212#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BingSiteAuth.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/BingSiteAuth.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="189">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sitemap.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/sitemap.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="23" selection-start="640" selection-end="640" vertical-scroll-proportion="0.4099783" vertical-offset="0" max-vertical-offset="922">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -37,7 +55,7 @@
       <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/media/twig/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="25" selection-start="1640" selection-end="1640" vertical-scroll-proportion="-20.363636" vertical-offset="105" max-vertical-offset="5040">
+            <state line="7" column="0" selection-start="219" selection-end="416" vertical-scroll-proportion="-4.4545455" vertical-offset="0" max-vertical-offset="5040">
               <folding>
                 <element signature="e#773#826#0" expanded="true" />
                 <element signature="e#1118#1144#0" expanded="true" />
@@ -76,10 +94,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DefaultController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="70" selection-start="736" selection-end="736" vertical-scroll-proportion="0.4488189" vertical-offset="0" max-vertical-offset="2268">
+            <state line="19" column="70" selection-start="736" selection-end="736" vertical-scroll-proportion="-12.090909" vertical-offset="0" max-vertical-offset="2268">
               <folding>
                 <element signature="e#40#88#0" expanded="true" />
               </folding>
@@ -139,7 +157,6 @@
         <option value="$PROJECT_DIR$/web/media/sass/_prettify.scss" />
         <option value="$PROJECT_DIR$/web/media/sass/_media-element.scss" />
         <option value="$PROJECT_DIR$/web/media/js/youtube.js" />
-        <option value="$PROJECT_DIR$/web/sitemap.xml" />
         <option value="$PROJECT_DIR$/web/media/sass/_introjs.scss" />
         <option value="$USER_HOME$/Downloads/emails (1).sql" />
         <option value="$PROJECT_DIR$/web/media/twig/20-minute-mail.html.twig" />
@@ -169,8 +186,9 @@
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/web/media/twig/layout.html.twig" />
         <option value="$PROJECT_DIR$/web/media/twig/index.html.twig" />
-        <option value="$PROJECT_DIR$/web/media/twig/about.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/web/media/twig/about.html.twig" />
+        <option value="$PROJECT_DIR$/web/sitemap.xml" />
       </list>
     </option>
   </component>
@@ -237,158 +255,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swiftmail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swiftmail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="media" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swiftmail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swiftmail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="media" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="twig" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swiftmail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swiftmail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swiftmail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swiftmail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swiftmail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swiftmail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swiftmail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swiftmail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="API" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swiftmail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swiftmail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swiftmail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="swiftmail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -582,7 +448,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="13" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1932">
           <folding>
-            <element signature="e#949#1001#0" expanded="true" />
+            <element signature="e#1160#1212#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -632,7 +498,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="657" selection-end="950" vertical-scroll-proportion="0.0" vertical-offset="336" max-vertical-offset="2226">
           <folding>
-            <element signature="e#949#1001#0" expanded="true" />
+            <element signature="e#1160#1212#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -658,7 +524,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="657" selection-end="950" vertical-scroll-proportion="0.0" vertical-offset="336" max-vertical-offset="2226">
           <folding>
-            <element signature="e#949#1001#0" expanded="true" />
+            <element signature="e#1160#1212#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -728,13 +594,6 @@
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entities/Handler/Visitor/Change.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="80" column="18" selection-start="2303" selection-end="2303" vertical-scroll-proportion="0.7637795" vertical-offset="791" max-vertical-offset="1995" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/sitemap.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="9" selection-start="543" selection-end="543" vertical-scroll-proportion="0.318872" vertical-offset="0" max-vertical-offset="922">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php">
@@ -840,9 +699,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="70" selection-start="736" selection-end="736" vertical-scroll-proportion="-12.090909" vertical-offset="0" max-vertical-offset="2268">
+          <folding>
+            <element signature="e#40#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/media/twig/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="25" selection-start="1640" selection-end="1640" vertical-scroll-proportion="-20.363636" vertical-offset="105" max-vertical-offset="5040">
+        <state line="7" column="0" selection-start="219" selection-end="416" vertical-scroll-proportion="-4.4545455" vertical-offset="0" max-vertical-offset="5040">
           <folding>
             <element signature="e#773#826#0" expanded="true" />
             <element signature="e#1118#1144#0" expanded="true" />
@@ -873,19 +741,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/media/twig/about.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="14" selection-start="1273" selection-end="1273" vertical-scroll-proportion="-17.818182" vertical-offset="0" max-vertical-offset="2079">
+        <state line="3" column="69" selection-start="209" selection-end="209" vertical-scroll-proportion="-1.9090909" vertical-offset="0" max-vertical-offset="2184">
           <folding>
-            <element signature="e#949#1001#0" expanded="true" />
+            <element signature="e#1160#1212#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+    <entry file="file://$PROJECT_DIR$/web/BingSiteAuth.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="70" selection-start="736" selection-end="736" vertical-scroll-proportion="0.4488189" vertical-offset="0" max-vertical-offset="2268">
-          <folding>
-            <element signature="e#40#88#0" expanded="true" />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="922">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/sitemap.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="23" selection-start="640" selection-end="640" vertical-scroll-proportion="0.4099783" vertical-offset="0" max-vertical-offset="922">
+          <folding />
         </state>
       </provider>
     </entry>
