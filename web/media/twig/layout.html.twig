@@ -6,6 +6,7 @@
     <meta name="description" content="{% trans %}Homepage Meta - Description{% endtrans %}">
     <meta name="msvalidate.01" content="DA4E38FB50F37F86F30AE446288CCAB8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block meta_tags %}{% endblock %}
     <title>{% trans %}Swift 10 Minute Mail - Free Disposable Email Account{% endtrans %}</title>
     <link rel="stylesheet" href="/media/compiled/style.min.css"/>
     {#<link rel="alternate" href="http://swift10minutemail.com" hreflang="de" />#}
@@ -40,15 +41,15 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li {% if page == 'home' %}class="active"{% endif %}><a href="{% if lang != "en" %}/{{ lang }}{% else %}/{% endif %}">{% trans %}Home{% endtrans %}</a></li>
-                    <li {% if page == 'about' %}class="active"{% endif %} ><a href="{% if lang != "en" %}/{{ lang }}/about{% else %}/about{% endif %}">{% trans %}About{% endtrans %}</a></li>
+                    <li {% if page == 'home' %}class="active"{% endif %}><a href="/">{% trans %}Home{% endtrans %}</a></li>
+                    <li {% if page == 'about' %}class="active"{% endif %} ><a href="/about">{% trans %}About{% endtrans %}</a></li>
                 </ul>
                 <ul class="nav navbar-nav pull-right">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{% trans %}Language{% endtrans %} <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="/">{% trans %}English{% endtrans %}</a></li>
-                            <li><a href="/de">{% trans %}German{% endtrans %}</a></li>
+                            <li><a href="http://swift10minutemail.com">{% trans %}English{% endtrans %}</a></li>
+                            <li><a href="http://de.swift10minutemail.com">{% trans %}German{% endtrans %}</a></li>
                             <li class="divider"></li>
                             <li class="dropdown-header">{% trans %}Advisers{% endtrans %}</li>
                             <li><a href="#">Ads</a></li>

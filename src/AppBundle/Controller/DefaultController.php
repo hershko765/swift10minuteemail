@@ -16,9 +16,9 @@ use AppBundle\Entities\Model\Visitor;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/{lang}", name="homepage", requirements={
-     *     "lang": "[\w]{2}"
-     * })
+     * @Route("/", name="homepage", host="swift10minutemail.local", defaults={"lang" = "en"})
+     * @Route("/", name="homepage_de", host="{lang}.swift10minutemail.local", defaults={"lang" = "en"})
+     *
      * @Template("index.html.twig")
      */
     public function indexAction(Request $request, $lang = 'en')
@@ -87,14 +87,13 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/{lang}/about", name="about")
-     * @Route("/about", name="about_english")
+     * @Route("/about", name="about", host="swift10minutemail.local", defaults={"lang" = "en"})
+     * @Route("/about", name="about_de", host="{lang}.swift10minutemail.local", defaults={"lang" = "en"})
      * @Template("about.html.twig")
      */
-    public function aboutAction($lang = "en")
+    public function aboutAction(Request $request, $lang)
     {
 	    $this->get('translator')->setLocale($lang);
-
 	    return [
             'page' => 'about',
 		    'lang' => $lang
